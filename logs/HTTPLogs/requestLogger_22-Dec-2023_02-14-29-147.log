@@ -1,0 +1,31 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": "50",
+    "name": "Test House",
+    "phone_number": "+965 123123",
+    "address": "123, Street, East Coast - 22-Dec-2023_02-14-29-317",
+    "types": [
+        "Grocery",
+        "Dairy",
+        "Snack",
+        "Beverages",
+        "Medicines"
+    ],
+    "website": "www.google.com",
+    "language": "English-IN",
+    "location": {
+        "lat": 32.98977,
+        "lng": -32.98977
+    }
+}

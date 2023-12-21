@@ -1,12 +1,17 @@
 package rest.assured.utils;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Properties;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -18,40 +23,17 @@ import io.restassured.specification.RequestSpecification;
 
 public class UtilMethods {
 
-//	private static final Logger log = LogManager.getLogger(UtilMethods.class);
+	private static final Logger log = LogManager.getLogger(UtilMethods.class);
 
 	RequestSpecification req;
 
-	public static final String baseURI = "https://rahulshettyacademy.com";
-
-	public static final String mapKey = "qaclick123";
+	public static final String path = System.getProperty("user.dir") + "\\src\\test\\resources\\";
 
 	public JsonPath rawToJson(String response) {
-
-//		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		JsonPath js1 = new JsonPath(response);
 
 		return js1;
-
-	}
-
-	public Set<Integer> randBetween(int min, int max, int size) {
-
-		int i = 0;
-
-		Set<Integer> randSet = new HashSet<Integer>();
-
-		while (randSet.size() < size) {
-
-			i = (int) (Math.random() * 1000 / 1);
-			if (i >= min && i <= max) {
-				randSet.add(i);
-//				System.out.println(i);
-			}
-//			System.out.println("randSet.size(): " + randSet.size());
-		}
-		return randSet;
 
 	}
 
@@ -88,16 +70,41 @@ public class UtilMethods {
 
 	public RequestSpecification requestSpecification() throws FileNotFoundException {
 
-		RestAssured.baseURI = baseURI;
+		RestAssured.baseURI = readPropFile("baseURL");
 
-		PrintStream reqStream = new PrintStream(new FileOutputStream("logs/reqLogger.log"));
-		PrintStream resStream = new PrintStream(new FileOutputStream("logs/resLogger.log"));
-		req = new RequestSpecBuilder().setBaseUri(baseURI).addQueryParam("key", mapKey)
-				.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
-				.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
-				.setUrlEncodingEnabled(false).build();
-
+		if (req == null) {
+			PrintStream reqStream = new PrintStream(
+					new FileOutputStream("logs/HTTPLogs/requestLogger_" + getTime() + ".log"));
+			PrintStream resStream = new PrintStream(
+					new FileOutputStream("logs/HTTPLogs/responseLogger_" + getTime() + ".log"));
+			req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
+					.addQueryParam("key", readPropFile("mapKey"))
+					.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
+					.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
+					.setUrlEncodingEnabled(false).build();
+			return req;
+		}
 		return req;
+	}
+
+	public static String readPropFile(String key) {
+		File file = new File(path + "config.properties");
+		String value = "";
+
+		Properties pr = new Properties();
+		try {
+			pr.load(new FileInputStream(file));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		value = pr.getProperty(key);
+		log.info("Value read from property file: " + value);
+
+		return value;
 	}
 
 }

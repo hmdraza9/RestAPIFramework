@@ -1,0 +1,167 @@
+[INFO ] 2023-12-22 01:04:57.667 [main] ffrfrf - Hell yeah!
+[INFO ] 2023-12-22 01:22:36.564 [main] StepDefinition - Setting up payload
+[INFO ] 2023-12-22 01:24:25.753 [main] StepDefinition - Setting up payload
+[INFO ] 2023-12-22 01:24:26.952 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 01:24:28.219 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 01:24:28.223 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:24:28.638 [main] StepDefinition - 
+
+Place ID: f372e949f7b1d12ca1e5c756816ed21a
+[INFO ] 2023-12-22 01:24:28.639 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:24:28.657 [main] StepDefinition - 
+
+Place ID: f372e949f7b1d12ca1e5c756816ed21a
+[INFO ] 2023-12-22 01:27:04.585 [main] StepDefinition - Setting up payload
+[INFO ] 2023-12-22 01:27:05.570 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 01:27:06.656 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 01:27:06.657 [main] StepDefinition - Response Body: {"status":"OK","place_id":"d4fbbbe9d3c14e02a245c42653457ca7","scope":"APP","reference":"5838269c988a801583e0f8b78c70b1a65838269c988a801583e0f8b78c70b1a6","id":"5838269c988a801583e0f8b78c70b1a6"}
+[INFO ] 2023-12-22 01:27:06.658 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:27:06.990 [main] StepDefinition - 
+
+Place ID: d4fbbbe9d3c14e02a245c42653457ca7
+[INFO ] 2023-12-22 01:27:06.991 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:27:07.010 [main] StepDefinition - 
+
+Place ID: d4fbbbe9d3c14e02a245c42653457ca7
+[INFO ] 2023-12-22 01:54:27.890 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 01:54:28.805 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 01:54:29.900 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 01:54:29.903 [main] StepDefinition - Response Body: {"status":"OK","place_id":"6211df7a612f4005561c3b172c60177c","scope":"APP","reference":"3a9cf5f99bc86fdd9319269c2c9f58d43a9cf5f99bc86fdd9319269c2c9f58d4","id":"3a9cf5f99bc86fdd9319269c2c9f58d4"}
+[INFO ] 2023-12-22 01:54:29.904 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:54:30.246 [main] StepDefinition - 
+
+Place ID: 6211df7a612f4005561c3b172c60177c
+[INFO ] 2023-12-22 01:54:30.247 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:54:30.269 [main] StepDefinition - 
+
+Place ID: 6211df7a612f4005561c3b172c60177c
+[INFO ] 2023-12-22 01:56:23.962 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 01:56:24.969 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 01:56:26.063 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 01:56:26.065 [main] StepDefinition - Response Body: {"status":"OK","place_id":"058bce76d7e4cf4d74e59dafc8f7b8bd","scope":"APP","reference":"0b961b9a0d70c53957f3f8ba520dc81a0b961b9a0d70c53957f3f8ba520dc81a","id":"0b961b9a0d70c53957f3f8ba520dc81a"}
+[INFO ] 2023-12-22 01:56:26.066 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:56:26.415 [main] StepDefinition - Place ID: 058bce76d7e4cf4d74e59dafc8f7b8bd
+[INFO ] 2023-12-22 01:56:26.416 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 01:56:26.437 [main] StepDefinition - Place ID: 058bce76d7e4cf4d74e59dafc8f7b8bd
+[INFO ] 2023-12-22 02:01:17.152 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:01:22.796 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:03:31.014 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:03:32.017 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:03:33.015 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:03:33.017 [main] StepDefinition - Response Body: {"status":"OK","place_id":"5a25e6d0abc838f75548b12920474117","scope":"APP","reference":"df5e24d219a5bd201efe21e4a3bbea76df5e24d219a5bd201efe21e4a3bbea76","id":"df5e24d219a5bd201efe21e4a3bbea76"}
+[INFO ] 2023-12-22 02:03:33.018 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:03:33.332 [main] StepDefinition - Place ID: 5a25e6d0abc838f75548b12920474117
+[INFO ] 2023-12-22 02:03:33.332 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:03:33.350 [main] StepDefinition - Place ID: 5a25e6d0abc838f75548b12920474117
+[INFO ] 2023-12-22 02:04:02.445 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:04:03.396 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:04:04.361 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:04:04.363 [main] StepDefinition - Response Body: {"status":"OK","place_id":"89f88b339478a1fa98aa973ffade625c","scope":"APP","reference":"116a545635f2e0e04f117bb1bcb07637116a545635f2e0e04f117bb1bcb07637","id":"116a545635f2e0e04f117bb1bcb07637"}
+[INFO ] 2023-12-22 02:04:04.364 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:04:04.681 [main] StepDefinition - Place ID: 89f88b339478a1fa98aa973ffade625c
+[INFO ] 2023-12-22 02:04:04.682 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:04:04.696 [main] StepDefinition - Place ID: 89f88b339478a1fa98aa973ffade625c
+[INFO ] 2023-12-22 02:06:58.085 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:06:59.128 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:07:00.411 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:07:00.413 [main] StepDefinition - Response Body: {"status":"OK","place_id":"6c241ef82efdbaecb13d76e5a2b7191a","scope":"APP","reference":"abd8340b08865811a1f7b05a4d6a1fa8abd8340b08865811a1f7b05a4d6a1fa8","id":"abd8340b08865811a1f7b05a4d6a1fa8"}
+[INFO ] 2023-12-22 02:07:00.414 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:07:00.794 [main] StepDefinition - Place ID: 6c241ef82efdbaecb13d76e5a2b7191a
+[INFO ] 2023-12-22 02:07:00.794 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:07:00.816 [main] StepDefinition - Place ID: 6c241ef82efdbaecb13d76e5a2b7191a
+[INFO ] 2023-12-22 02:07:00.829 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:07:00.840 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:07:01.230 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:07:01.232 [main] StepDefinition - Response Body: {"status":"OK","place_id":"c2a4c54c5f9ccb9841cc1e2fb9d0b61d","scope":"APP","reference":"0c43c6e563b8606b88867e7e77a9ed750c43c6e563b8606b88867e7e77a9ed75","id":"0c43c6e563b8606b88867e7e77a9ed75"}
+[INFO ] 2023-12-22 02:07:01.235 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:07:01.277 [main] StepDefinition - Place ID: c2a4c54c5f9ccb9841cc1e2fb9d0b61d
+[INFO ] 2023-12-22 02:07:01.277 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:07:01.297 [main] StepDefinition - Place ID: c2a4c54c5f9ccb9841cc1e2fb9d0b61d
+[INFO ] 2023-12-22 02:13:04.906 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:13:05.879 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:13:06.997 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:13:06.999 [main] StepDefinition - Response Body: {"status":"OK","place_id":"c4c05a623ee0c94eab5c5c7f14e8a786","scope":"APP","reference":"64641665a394b10ebc9ac8afc60bcc0664641665a394b10ebc9ac8afc60bcc06","id":"64641665a394b10ebc9ac8afc60bcc06"}
+[INFO ] 2023-12-22 02:13:07.000 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:13:07.341 [main] StepDefinition - Place ID: c4c05a623ee0c94eab5c5c7f14e8a786
+[INFO ] 2023-12-22 02:13:07.342 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:13:07.358 [main] StepDefinition - Place ID: c4c05a623ee0c94eab5c5c7f14e8a786
+[INFO ] 2023-12-22 02:13:07.368 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:13:07.377 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:13:07.513 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:13:07.513 [main] StepDefinition - Response Body: {"status":"OK","place_id":"3f082d552cbc9cbd136fe1502ae87d5a","scope":"APP","reference":"3b36dda3fd72de7492001df48a56f7d13b36dda3fd72de7492001df48a56f7d1","id":"3b36dda3fd72de7492001df48a56f7d1"}
+[INFO ] 2023-12-22 02:13:07.513 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:13:07.533 [main] StepDefinition - Place ID: 3f082d552cbc9cbd136fe1502ae87d5a
+[INFO ] 2023-12-22 02:13:07.534 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:13:07.547 [main] StepDefinition - Place ID: 3f082d552cbc9cbd136fe1502ae87d5a
+[INFO ] 2023-12-22 02:14:00.897 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:14:01.369 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:14:28.738 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:14:29.667 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:14:30.732 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:14:30.734 [main] StepDefinition - Response Body: {"status":"OK","place_id":"9024265181a9ceced24246186b2e7c06","scope":"APP","reference":"3d91977a0f191b39276b3cfc205ca4a63d91977a0f191b39276b3cfc205ca4a6","id":"3d91977a0f191b39276b3cfc205ca4a6"}
+[INFO ] 2023-12-22 02:14:30.735 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:14:31.072 [main] StepDefinition - Place ID: 9024265181a9ceced24246186b2e7c06
+[INFO ] 2023-12-22 02:14:31.073 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:14:31.095 [main] StepDefinition - Place ID: 9024265181a9ceced24246186b2e7c06
+[INFO ] 2023-12-22 02:14:31.103 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:14:31.115 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:14:31.246 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:14:31.246 [main] StepDefinition - Response Body: {"status":"OK","place_id":"d15909177d5124503eb783a671622270","scope":"APP","reference":"76588c6f46f0c102038f047027fdf5ab76588c6f46f0c102038f047027fdf5ab","id":"76588c6f46f0c102038f047027fdf5ab"}
+[INFO ] 2023-12-22 02:14:31.247 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:14:31.263 [main] StepDefinition - Place ID: d15909177d5124503eb783a671622270
+[INFO ] 2023-12-22 02:14:31.264 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:14:31.283 [main] StepDefinition - Place ID: d15909177d5124503eb783a671622270
+[INFO ] 2023-12-22 02:17:19.559 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:17:20.652 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:17:21.977 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:17:21.980 [main] StepDefinition - Response Body: {"status":"OK","place_id":"313c49bfe28de5314b9709ce7bcb1125","scope":"APP","reference":"afd5c1fc6518481ee6f467b6bda92ac3afd5c1fc6518481ee6f467b6bda92ac3","id":"afd5c1fc6518481ee6f467b6bda92ac3"}
+[INFO ] 2023-12-22 02:17:21.981 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:17:22.637 [main] StepDefinition - Place ID: 313c49bfe28de5314b9709ce7bcb1125
+[INFO ] 2023-12-22 02:17:22.648 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:17:22.691 [main] StepDefinition - Place ID: 313c49bfe28de5314b9709ce7bcb1125
+[INFO ] 2023-12-22 02:17:22.704 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:17:22.772 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:17:22.974 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:17:22.976 [main] StepDefinition - Response Body: {"status":"OK","place_id":"a3fe7af04132c0425b07ad8706ad2521","scope":"APP","reference":"6811112a470122ecced7a7609ce7dbcb6811112a470122ecced7a7609ce7dbcb","id":"6811112a470122ecced7a7609ce7dbcb"}
+[INFO ] 2023-12-22 02:17:22.978 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:17:23.013 [main] StepDefinition - Place ID: a3fe7af04132c0425b07ad8706ad2521
+[INFO ] 2023-12-22 02:17:23.016 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:17:23.040 [main] StepDefinition - Place ID: a3fe7af04132c0425b07ad8706ad2521
+[INFO ] 2023-12-22 02:31:24.521 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:31:25.507 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:31:26.813 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:31:26.816 [main] StepDefinition - Response Body: {"status":"OK","place_id":"12818e3dac451d652230a96b5d8364b7","scope":"APP","reference":"bee4d56edbd501f1b18e600a8b9ffacdbee4d56edbd501f1b18e600a8b9ffacd","id":"bee4d56edbd501f1b18e600a8b9ffacd"}
+[INFO ] 2023-12-22 02:31:26.817 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:31:27.157 [main] StepDefinition - Place ID: 12818e3dac451d652230a96b5d8364b7
+[INFO ] 2023-12-22 02:31:27.158 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:31:27.175 [main] StepDefinition - Place ID: 12818e3dac451d652230a96b5d8364b7
+[INFO ] 2023-12-22 02:31:27.184 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:31:27.197 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:31:27.320 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:31:27.320 [main] StepDefinition - Response Body: {"status":"OK","place_id":"91b6edb8f158ce93d61403465ee1a776","scope":"APP","reference":"b14ddd613ce1c4b23177781f7e6d2ba4b14ddd613ce1c4b23177781f7e6d2ba4","id":"b14ddd613ce1c4b23177781f7e6d2ba4"}
+[INFO ] 2023-12-22 02:31:27.322 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:31:27.344 [main] StepDefinition - Place ID: 91b6edb8f158ce93d61403465ee1a776
+[INFO ] 2023-12-22 02:31:27.344 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:31:27.359 [main] StepDefinition - Place ID: 91b6edb8f158ce93d61403465ee1a776
+[INFO ] 2023-12-22 02:32:32.164 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:32:33.089 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:32:34.542 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:32:34.579 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:36:55.671 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:36:56.724 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:43:16.766 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:43:17.742 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:43:18.784 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:43:18.787 [main] StepDefinition - Response Body: {"status":"OK","place_id":"d1c04c3ee48bcac9af68aeaae49228eb","scope":"APP","reference":"3aa088fe5391ecc8a522f9e8abd29bc03aa088fe5391ecc8a522f9e8abd29bc0","id":"3aa088fe5391ecc8a522f9e8abd29bc0"}
+[INFO ] 2023-12-22 02:43:18.788 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:43:19.131 [main] StepDefinition - Place ID: d1c04c3ee48bcac9af68aeaae49228eb
+[INFO ] 2023-12-22 02:43:19.132 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:43:19.147 [main] StepDefinition - Place ID: d1c04c3ee48bcac9af68aeaae49228eb
+[INFO ] 2023-12-22 02:49:31.677 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 02:49:32.775 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 02:49:33.945 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 02:49:33.947 [main] StepDefinition - Response Body: {"status":"OK","place_id":"2bb2416ba3edd6403c116ff766843b66","scope":"APP","reference":"a4a357b847a6d02353b021a7e80ddee3a4a357b847a6d02353b021a7e80ddee3","id":"a4a357b847a6d02353b021a7e80ddee3"}
+[INFO ] 2023-12-22 02:49:33.948 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:49:34.341 [main] StepDefinition - Place ID: 2bb2416ba3edd6403c116ff766843b66
+[INFO ] 2023-12-22 02:49:34.341 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 02:49:34.354 [main] StepDefinition - Place ID: 2bb2416ba3edd6403c116ff766843b66

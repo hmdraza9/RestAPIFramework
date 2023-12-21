@@ -1,0 +1,29 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": "50",
+    "name": "New Villa",
+    "phone_number": "+965 123123",
+    "address": "1q2w3e, Street, West Coast - 22-Dec-2023_02-14-31-110",
+    "types": [
+        "Grocery",
+        "Snack",
+        "Beverages"
+    ],
+    "website": "www.google.com",
+    "language": "English-IN",
+    "location": {
+        "lat": 32.98977,
+        "lng": -32.98977
+    }
+}

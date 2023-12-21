@@ -5,7 +5,6 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertTrue;
 
 import java.io.FileNotFoundException;
-import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,6 +17,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import resources.APIResources;
 import resources.TestDataBuild;
 import rest.assured.utils.UtilMethods;
 import rest.assured.utils.testDataPayloads;
@@ -29,10 +29,6 @@ public class StepDefinition extends UtilMethods {
 
 	TestDataBuild payload = new TestDataBuild();
 
-	private static Set<String> placeSet;
-
-//	UtilMethods utils = new UtilMethods();
-
 	RequestSpecification reqSpec;
 
 	ResponseSpecification resspec;
@@ -43,45 +39,55 @@ public class StepDefinition extends UtilMethods {
 
 	testDataPayloads data = new testDataPayloads();
 
-	@Given("{string} Payload")
-	public void payload(String typePayload) throws FileNotFoundException {
+	@Given("Add Place Payload with {string} {string} {string}")
+	public void payload(String name, String address, String types) throws FileNotFoundException {
 
-		log.info("Hell yeah!!");
+		log.info("Setting up Pay Load");
 
 		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
-		if (typePayload.equalsIgnoreCase("addplace")) {
+		reqSpec = given().spec(requestSpecification()).body(payload.addPlaceBodySetUp(name, address, types));
 
-			reqSpec = given().spec(requestSpecification()).body(payload.addPlaceBodySetUp());
-
-		}
 	}
 
 	@When("User call {string} with {string} request")
-	public void user_call_with_request(String string, String string2) {
+	public void user_call_with_request(String resource, String method) {
+		APIResources resourceAPI = APIResources.valueOf(resource);
 
-		res = reqSpec.when().log().all().post(testDataPayloads.uriMapAddPlace).then().spec(resspec).extract()
-				.response();
+		log.info("Capturing response");
+
+		if (method.equalsIgnoreCase("GET")) {
+			// using property file
+			// res =
+			// reqSpec.when().log().all().post(UtilMethods.readPropFile("uriMapAddPlace")).then().spec(resspec).extract().response();
+			// using Enum
+			res = reqSpec.when().log().all().get(resourceAPI.getResource()).then().spec(resspec).extract().response();
+		} else
+			res = reqSpec.when().log().all().post(resourceAPI.getResource()).then().spec(resspec).extract().response();
 
 	}
 
 	@Then("the API call is success with status code {int}")
 	public void the_api_call_is_success_with_status_code(Integer statCode) {
 
+		log.info("Validating if API Call status is OK");
+
 		assertTrue(res.getStatusCode() == statCode);
 		responseBody = res.asString();
-		System.out.println(responseBody);
+		log.info("Response Body: " + responseBody);
 
 	}
 
 	@Then("{string} in response body is {string}")
 	public void in_response_body_is(String keyValue, String expectedValue) {
 
+		log.info("Validating response body value");
+
 		res.then().log().all().assertThat().body(keyValue, equalTo(expectedValue));
 
 		placeID = rawToJson(responseBody).getString("place_id");
 
-		System.out.println("\n\nPlace ID: " + placeID);
+		log.info("Place ID: " + placeID);
 
 	}
 
