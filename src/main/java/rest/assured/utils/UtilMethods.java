@@ -7,13 +7,22 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.path.json.JsonPath;
+import io.restassured.specification.RequestSpecification;
 import test.pojo.classes.AddPlace;
 import test.pojo.classes.Location;
 
 public class UtilMethods {
 
 //	private static final Logger log = LogManager.getLogger(UtilMethods.class);
+
+	RequestSpecification req;
+
+	public static final String baseURI = "https://rahulshettyacademy.com";
+
+	public static final String mapKey = "qaclick123";
 
 	public JsonPath rawToJson(String response) {
 
@@ -73,4 +82,15 @@ public class UtilMethods {
 
 		return ap;
 	}
+
+	public RequestSpecification requestSpecification() {
+
+		RestAssured.baseURI = baseURI;
+
+		req = new RequestSpecBuilder().setBaseUri(baseURI).addQueryParam("key", mapKey)
+				.addHeader("Content-Type", "application/json").setUrlEncodingEnabled(false).build();
+
+		return req;
+	}
+
 }
