@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertTrue;
 
+import java.io.FileNotFoundException;
 import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
@@ -43,7 +44,7 @@ public class StepDefinition extends UtilMethods {
 	testDataPayloads data = new testDataPayloads();
 
 	@Given("{string} Payload")
-	public void payload(String typePayload) {
+	public void payload(String typePayload) throws FileNotFoundException {
 
 		log.info("Hell yeah!!");
 

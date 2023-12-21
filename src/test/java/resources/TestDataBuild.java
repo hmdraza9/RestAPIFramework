@@ -3,6 +3,7 @@ package resources;
 import java.util.ArrayList;
 import java.util.List;
 
+import rest.assured.utils.UtilMethods;
 import test.pojo.classes.AddPlace;
 import test.pojo.classes.Location;
 
@@ -19,7 +20,7 @@ public class TestDataBuild {
 		ap.setAccuracy("50");
 		ap.setName("Iqbal Villa");
 		ap.setPhone_number("+965 123123");
-		ap.setAddress("8-1-33, Toli Chowki");
+		ap.setAddress("8-1-33, Toli Chowki " + UtilMethods.getTime());
 		List<String> typeList = new ArrayList<>();
 		typeList.add("Grocery");
 		typeList.add("Dairy");
