@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +16,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import rest.assured.utils.UtilMethods;
 import rest.assured.utils.testDataPayloads;
 import test.pojo.classes.AddPlace;
@@ -38,9 +41,13 @@ public class StepDefinition {
 
 	RequestSpecification req;
 
-	ValidatableResponse vResp;
+	RequestSpecification reqSpec;
 
-	Response resp;
+	ResponseSpecification resspec;
+
+	Response res;
+
+	String responseBody;
 
 	testDataPayloads data = new testDataPayloads();
 
@@ -53,11 +60,11 @@ public class StepDefinition {
 		req = new RequestSpecBuilder().setBaseUri(baseURI).addQueryParam("key", mapKey)
 				.addHeader("Content-Type", "application/json").setUrlEncodingEnabled(false).build();
 
-		RequestSpecification addPlaceReqSpec = given().spec(req).log().all();
+		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
 		if (typePayload.equalsIgnoreCase("addplace")) {
 
-			addPlaceReqSpec.body(addPlaceBodySetUp());
+			reqSpec = given().spec(req).body(addPlaceBodySetUp());
 
 		}
 	}
@@ -65,27 +72,34 @@ public class StepDefinition {
 	@When("User call {string} with {string} request")
 	public void user_call_with_request(String string, String string2) {
 
-		resp = req.when().log().all().post(testDataPayloads.uriMapAddPlace);
+		res = reqSpec.when().log().all().post(testDataPayloads.uriMapAddPlace).then().spec(resspec).extract()
+				.response();
 
 	}
 
-	@Then("the API call is success with status code {string}")
-	public void the_api_call_is_success_with_status_code(String string) {
+	@Then("the API call is success with status code {int}")
+	public void the_api_call_is_success_with_status_code(Integer statCode) {
 
-		vResp = resp.then().log().all().assertThat().statusCode(200);
+		assertTrue(res.getStatusCode() == statCode);
+		responseBody = res.asString();
+		System.out.println(responseBody);
 
 	}
 
 	@Then("{string} in response body is {string}")
-	public void in_response_body_is(String string, String string2) {
+	public void in_response_body_is(String keyValue, String expectedValue) {
 
-		vResp.assertThat().body(string, equalTo(string2));
+		res.then().log().all().assertThat().body(keyValue, equalTo(expectedValue));
+
+		placeID = utils.rawToJson(responseBody).getString("place_id");
+
+		System.out.println("\n\nPlace ID: " + placeID);
 
 	}
 
 	public AddPlace addPlaceBodySetUp() {
 
-//		log.info("Add place body setup.");
+		System.out.println("Add place body setup.");
 		AddPlace ap = new AddPlace();
 		Location apLoc = new Location();
 		apLoc.setLat(32.98977F);
