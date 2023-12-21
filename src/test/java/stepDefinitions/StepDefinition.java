@@ -62,8 +62,11 @@ public class StepDefinition extends UtilMethods {
 			// reqSpec.when().log().all().post(UtilMethods.readPropFile("uriMapAddPlace")).then().spec(resspec).extract().response();
 			// using Enum
 			res = reqSpec.when().log().all().get(resourceAPI.getResource()).then().spec(resspec).extract().response();
-		} else
+		} else if (method.equalsIgnoreCase("POST")) {
 			res = reqSpec.when().log().all().post(resourceAPI.getResource()).then().spec(resspec).extract().response();
+		} else
+			res = reqSpec.when().log().all().delete(resourceAPI.getResource()).then().spec(resspec).extract()
+					.response();
 
 	}
 
