@@ -1,5 +1,6 @@
 package rest.assured.utils;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -10,10 +11,16 @@ public class ffrfrf {
 
 	private static final Logger log = LogManager.getLogger(ffrfrf.class);
 
-	public static final String path = System.getProperty("user.dir") + "\\src\\test\\resources\\";
+//	public static final String path = System.getProperty("user.dir") + "/src/test/resources/"+"config.properties";
+	public static final String path = System.getProperty("user.dir") + "\\src\\test\\resources\\"+"config.properties";
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		log.info(path);
+		
+		File file = new File(path);
+		
+		System.out.println(file.exists());
+		
 	}
 
 }

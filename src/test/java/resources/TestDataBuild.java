@@ -28,10 +28,6 @@ public class TestDataBuild {
 		ap.setAddress(address + " - " + UtilMethods.getTime());
 		List<String> typeList = Arrays.asList(types.split("_"));
 
-//		for (String str : typeList) {
-//			typeList.add(str);
-//		}
-
 		ap.setTypes(typeList);
 		ap.setWebsite("www.google.com");
 		ap.setLanguage("English-IN");

@@ -23,11 +23,25 @@ import io.restassured.specification.RequestSpecification;
 
 public class UtilMethods {
 
+	static String path = System.getProperty("user.dir");
+
 	private static final Logger log = LogManager.getLogger(UtilMethods.class);
 
 	RequestSpecification req;
 
-	public static final String path = System.getProperty("user.dir") + "\\src\\test\\resources\\";
+//	create logic
+//	to toggle
+//	path value
+//	wrt OS name
+	/*
+	 * 
+	 * public static final String path = System.getProperty("user.dir") +
+	 * "/src/test/resources/";
+	 * 
+	 * 
+	 * public static final String path = System.getProperty("user.dir") +
+	 * "\\src\\test\\resources\\";
+	 */
 
 	public JsonPath rawToJson(String response) {
 
@@ -88,17 +102,23 @@ public class UtilMethods {
 	}
 
 	public static String readPropFile(String key) {
-		File file = new File(path + "config.properties");
+
+		File file;
+
+		if (System.getProperty("os.name").toLowerCase().contains("Mac".toLowerCase())) {
+//			path = ;
+			file = new File(path + "/src/test/resources/" + "config.properties");
+		} else
+			file = new File(path + "\\src\\test\\resources\\" + "config.properties");
+
 		String value = "";
 
 		Properties pr = new Properties();
 		try {
 			pr.load(new FileInputStream(file));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		value = pr.getProperty(key);
