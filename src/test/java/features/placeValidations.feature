@@ -6,7 +6,7 @@ Scenario: Verify add place is working
 	Then the API call is success with status code 200
 	And "status" in response body is "OK"
 	And "scope" in response body is "APP"
-	And verify data "<address>" with API "GetPlaceAPI"
+	And verify data "<address>" for string "address" with "GetPlaceAPI"
 	
 	Examples:
 		| name       | address                    | types                                   |

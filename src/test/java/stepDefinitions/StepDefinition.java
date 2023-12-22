@@ -27,6 +27,8 @@ public class StepDefinition extends UtilMethods {
 
 	public static String placeID;
 
+	UtilMethods util = new UtilMethods();
+
 	TestDataBuild payload = new TestDataBuild();
 
 	RequestSpecification reqSpec;
@@ -36,6 +38,8 @@ public class StepDefinition extends UtilMethods {
 	Response res;
 
 	String responseBody;
+
+	APIResources resourceAPI;
 
 	testDataPayloads data = new testDataPayloads();
 
@@ -52,9 +56,9 @@ public class StepDefinition extends UtilMethods {
 
 	@When("User call {string} with {string} request")
 	public void user_call_with_request(String resource, String method) {
-		APIResources resourceAPI = APIResources.valueOf(resource);
+		resourceAPI = APIResources.valueOf(resource);
 
-		log.info("Capturing response");
+		log.info("Calling API: " + resource + "; HTTP Method: " + method);
 
 		if (method.equalsIgnoreCase("GET")) {
 			// using property file
@@ -67,7 +71,6 @@ public class StepDefinition extends UtilMethods {
 		} else
 			res = reqSpec.when().log().all().delete(resourceAPI.getResource()).then().spec(resspec).extract()
 					.response();
-
 	}
 
 	@Then("the API call is success with status code {int}")
@@ -83,6 +86,7 @@ public class StepDefinition extends UtilMethods {
 
 	@Then("{string} in response body is {string}")
 	public void in_response_body_is(String keyValue, String expectedValue) {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
 
 		log.info("Validating response body value");
 
@@ -94,10 +98,23 @@ public class StepDefinition extends UtilMethods {
 
 	}
 
-	@Then("verify data {string} with API {string}")
-	public void verify_data_with_api(String expected, String resource) {
-		
-		log.info("Verifying the data");
+	@When("verify data {string} for string {string} with {string}")
+	public void verify_data_for_string(String expectedValue, String jPathString, String resource)
+			throws FileNotFoundException {
+		log.info("In verify data step");
+
+		resourceAPI = APIResources.valueOf("GetPlaceAPI");
+
+		reqSpec = given().spec(requestSpecification()).queryParam("place_id", placeID);
+
+		user_call_with_request(resource, "GET");
+
+		String actualValue = util.rawToJson(res.asString()).getString(jPathString);
+
+		log.info("\nExpected: " + expectedValue + 
+				 "\nActual  : " + actualValue);
+		assertTrue(actualValue.contains(expectedValue));
+
 	}
 
 }

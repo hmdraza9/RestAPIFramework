@@ -1,0 +1,30 @@
+HTTP/1.1 200 OK
+Date: Fri, 22 Dec 2023 20:47:49 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "8d419f5eae984a1322c1ae7bfe035853",
+    "scope": "APP",
+    "reference": "3e71f0315501d55dd3ecf3ce0e977fac3e71f0315501d55dd3ecf3ce0e977fac",
+    "id": "3e71f0315501d55dd3ecf3ce0e977fac"
+}
+HTTP/1.1 200 OK
+Date: Fri, 22 Dec 2023 20:47:52 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 0
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json; charset=UTF-8
