@@ -224,3 +224,19 @@ Place ID: 6211df7a612f4005561c3b172c60177c
 [INFO ] 2023-12-22 15:38:29.870 [main] StepDefinition - Place ID: 8d6751c9860623d7e15a1364b339d5c2
 [INFO ] 2023-12-22 15:38:29.870 [main] StepDefinition - Validating response body value
 [INFO ] 2023-12-22 15:38:29.893 [main] StepDefinition - Place ID: 8d6751c9860623d7e15a1364b339d5c2
+[INFO ] 2023-12-22 16:37:44.907 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 16:37:45.914 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 16:37:49.517 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 16:37:49.519 [main] StepDefinition - Response Body: {"status":"OK","place_id":"5b1b8fdeea2b824ff5d198a4aba68bd8","scope":"APP","reference":"c9fd559f8d43bc537a0e897b1720908ec9fd559f8d43bc537a0e897b1720908e","id":"c9fd559f8d43bc537a0e897b1720908e"}
+[INFO ] 2023-12-22 16:37:49.519 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 16:37:49.838 [main] StepDefinition - Place ID: 5b1b8fdeea2b824ff5d198a4aba68bd8
+[INFO ] 2023-12-22 16:37:49.839 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 16:37:49.869 [main] StepDefinition - Place ID: 5b1b8fdeea2b824ff5d198a4aba68bd8
+[INFO ] 2023-12-22 16:37:49.894 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-22 16:37:49.909 [main] StepDefinition - Capturing response
+[INFO ] 2023-12-22 16:37:52.325 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-22 16:37:52.325 [main] StepDefinition - Response Body: {"status":"OK","place_id":"9ac6a071f63bc13a7abf7b8d51663f03","scope":"APP","reference":"c40ef1557a949303db53b2b588f72a2bc40ef1557a949303db53b2b588f72a2b","id":"c40ef1557a949303db53b2b588f72a2b"}
+[INFO ] 2023-12-22 16:37:52.326 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 16:37:52.376 [main] StepDefinition - Place ID: 9ac6a071f63bc13a7abf7b8d51663f03
+[INFO ] 2023-12-22 16:37:52.376 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-22 16:37:52.401 [main] StepDefinition - Place ID: 9ac6a071f63bc13a7abf7b8d51663f03

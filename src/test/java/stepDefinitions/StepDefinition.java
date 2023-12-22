@@ -94,4 +94,10 @@ public class StepDefinition extends UtilMethods {
 
 	}
 
+	@Then("verify data {string} with API {string}")
+	public void verify_data_with_api(String expected, String resource) {
+		
+		log.info("Verifying the data");
+	}
+
 }
