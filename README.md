@@ -9,3 +9,5 @@ Added Logger, working, added property file reader and using them
 Added Enum to read URIs
 
 Completed as E2E scenario, add place, verify place
+
+Added delete place

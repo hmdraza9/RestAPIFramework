@@ -68,7 +68,7 @@ public class StepDefinition extends UtilMethods {
 			res = reqSpec.when().log().all().get(resourceAPI.getResource()).then().spec(resspec).extract().response();
 		} else if (method.equalsIgnoreCase("POST")) {
 			res = reqSpec.when().log().all().post(resourceAPI.getResource()).then().spec(resspec).extract().response();
-		} else
+		} else if (method.equalsIgnoreCase("DELETE"))
 			res = reqSpec.when().log().all().delete(resourceAPI.getResource()).then().spec(resspec).extract()
 					.response();
 	}
@@ -111,9 +111,29 @@ public class StepDefinition extends UtilMethods {
 
 		String actualValue = util.rawToJson(res.asString()).getString(jPathString);
 
-		log.info("\nExpected: " + expectedValue + 
-				 "\nActual  : " + actualValue);
+		log.info("\nExpected: " + expectedValue + "\nActual  : " + actualValue);
 		assertTrue(actualValue.contains(expectedValue));
+
+	}
+
+	@Given("deletePlace Payload")
+	public void delete_place_payload() throws FileNotFoundException {
+
+		log.info("In delete Place Payload step");
+
+		reqSpec = given().spec(requestSpecification()).body(payload.deletePlacePayload(placeID));
+
+		log.info("Deletion response: " + res.asString());
+
+		// Validate place deletion:
+
+//		resourceAPI = APIResources.valueOf("GetPlaceAPI");
+//
+//		reqSpec = given().spec(requestSpecification()).queryParam("place_id", placeID);
+//
+//		user_call_with_request("GetPlaceAPI", "GET");
+//
+//		log.info("res.asString(): "+res.asString());
 
 	}
 
