@@ -14,7 +14,7 @@ public class TestDataBuild {
 
 	private static final Logger log = LogManager.getLogger(TestDataBuild.class);
 
-	public AddPlace addPlaceBodySetUp(String name, String address, String types) {
+	public AddPlace addPlaceBodySetUp(String name, String address, String types, String language) {
 
 		log.info("Add place body setup.");
 		AddPlace ap = new AddPlace();
@@ -30,7 +30,7 @@ public class TestDataBuild {
 
 		ap.setTypes(typeList);
 		ap.setWebsite("www.google.com");
-		ap.setLanguage("English-IN");
+		ap.setLanguage(language);
 
 		return ap;
 	}

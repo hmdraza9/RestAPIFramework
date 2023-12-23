@@ -43,15 +43,15 @@ public class StepDefinition extends UtilMethods {
 
 	testDataPayloads data = new testDataPayloads();
 
-	@Given("Add Place Payload with {string} {string} {string}")
-	public void payload(String name, String address, String types) throws FileNotFoundException {
+	@Given("Add Place Payload with {string} {string} {string} {string}")
+	public void payload(String name, String address, String types, String language) throws FileNotFoundException {
 		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
 
 		log.info("Setting up Pay Load");
 
 		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
-		reqSpec = given().spec(requestSpecification()).body(payload.addPlaceBodySetUp(name, address, types));
+		reqSpec = given().spec(requestSpecification()).body(payload.addPlaceBodySetUp(name, address, types, language));
 
 	}
 
