@@ -92,9 +92,9 @@ public class StepDefinition extends UtilMethods {
 
 		res.then().log().all().assertThat().body(keyValue, equalTo(expectedValue));
 
-		placeID = rawToJson(responseBody).getString("place_id");
+		log.info("keyValue: " + keyValue);
 
-		log.info("Place ID: " + placeID);
+		log.info("expectedValue: " + expectedValue);
 
 	}
 
@@ -125,16 +125,6 @@ public class StepDefinition extends UtilMethods {
 
 		log.info("Deletion response: " + res.asString());
 
-		// Validate place deletion:
-
-//		resourceAPI = APIResources.valueOf("GetPlaceAPI");
-//
-//		reqSpec = given().spec(requestSpecification()).queryParam("place_id", placeID);
-//
-//		user_call_with_request("GetPlaceAPI", "GET");
-//
-//		log.info("res.asString(): "+res.asString());
-
-	}
+	}//hello
 
 }
