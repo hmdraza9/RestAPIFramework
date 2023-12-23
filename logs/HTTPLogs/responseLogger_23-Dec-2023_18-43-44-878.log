@@ -1,0 +1,34 @@
+HTTP/1.1 200 OK
+Date: Sat, 23 Dec 2023 13:13:46 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "e88e298fb1d870c6c958358a9eec7189",
+    "scope": "APP",
+    "reference": "5b970df0bf7bf74614872c865078fb855b970df0bf7bf74614872c865078fb85",
+    "id": "5b970df0bf7bf74614872c865078fb85"
+}
+HTTP/1.1 404 Not Found
+Date: Sat, 23 Dec 2023 13:13:46 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 67
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "Get operation failed, looks like place_id  doesn't exists"
+}

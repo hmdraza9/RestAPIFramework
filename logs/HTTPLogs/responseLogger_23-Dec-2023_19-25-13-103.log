@@ -1,0 +1,59 @@
+HTTP/1.1 200 OK
+Date: Sat, 23 Dec 2023 13:55:16 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "76c367b2f41b688a0f4280123f2314e4",
+    "scope": "APP",
+    "reference": "9927ea586c35142143a9531f5a693d1f9927ea586c35142143a9531f5a693d1f",
+    "id": "9927ea586c35142143a9531f5a693d1f"
+}
+HTTP/1.1 200 OK
+Date: Sat, 23 Dec 2023 13:55:17 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 289
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "32.98977",
+        "longitude": "-32.98977"
+    },
+    "accuracy": "50",
+    "name": "Test House",
+    "phone_number": "+965 123123",
+    "address": "123, Street, East Coast - 23-Dec-2023_19-25-13-248",
+    "types": "Grocery,Dairy,Snack,Beverages,Medicines",
+    "website": "www.google.com",
+    "language": "English-IN"
+}
+HTTP/1.1 200 OK
+Date: Sat, 23 Dec 2023 13:55:18 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}

@@ -45,6 +45,7 @@ public class StepDefinition extends UtilMethods {
 
 	@Given("Add Place Payload with {string} {string} {string}")
 	public void payload(String name, String address, String types) throws FileNotFoundException {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
 
 		log.info("Setting up Pay Load");
 
@@ -56,6 +57,8 @@ public class StepDefinition extends UtilMethods {
 
 	@When("User call {string} with {string} request")
 	public void user_call_with_request(String resource, String method) {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
+
 		resourceAPI = APIResources.valueOf(resource);
 
 		log.info("Calling API: " + resource + "; HTTP Method: " + method);
@@ -68,6 +71,11 @@ public class StepDefinition extends UtilMethods {
 			res = reqSpec.when().log().all().get(resourceAPI.getResource()).then().spec(resspec).extract().response();
 		} else if (method.equalsIgnoreCase("POST")) {
 			res = reqSpec.when().log().all().post(resourceAPI.getResource()).then().spec(resspec).extract().response();
+
+			if (resource.equals("AddPlaceAPI")) {
+				placeID = util.rawToJson(res.asString()).getString("place_id");
+				log.info("resourceAPI.getResource(): " + resource);
+			}
 		} else if (method.equalsIgnoreCase("DELETE"))
 			res = reqSpec.when().log().all().delete(resourceAPI.getResource()).then().spec(resspec).extract()
 					.response();
@@ -75,6 +83,7 @@ public class StepDefinition extends UtilMethods {
 
 	@Then("the API call is success with status code {int}")
 	public void the_api_call_is_success_with_status_code(Integer statCode) {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
 
 		log.info("Validating if API Call status is OK");
 
@@ -100,7 +109,10 @@ public class StepDefinition extends UtilMethods {
 
 	@When("verify data {string} for string {string} with {string}")
 	public void verify_data_for_string(String expectedValue, String jPathString, String resource)
+
 			throws FileNotFoundException {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
+
 		log.info("In verify data step");
 
 		resourceAPI = APIResources.valueOf("GetPlaceAPI");
@@ -112,12 +124,14 @@ public class StepDefinition extends UtilMethods {
 		String actualValue = util.rawToJson(res.asString()).getString(jPathString);
 
 		log.info("\nExpected: " + expectedValue + "\nActual  : " + actualValue);
+
 		assertTrue(actualValue.contains(expectedValue));
 
 	}
 
 	@Given("deletePlace Payload")
 	public void delete_place_payload() throws FileNotFoundException {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
 
 		log.info("In delete Place Payload step");
 
@@ -125,6 +139,5 @@ public class StepDefinition extends UtilMethods {
 
 		log.info("Deletion response: " + res.asString());
 
-	}//hello
-
+	}
 }

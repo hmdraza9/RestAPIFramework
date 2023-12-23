@@ -11,3 +11,5 @@ Added Enum to read URIs
 Completed as E2E scenario, add place, verify place
 
 Added delete place
+
+23 Dec 2023 - Some changes
