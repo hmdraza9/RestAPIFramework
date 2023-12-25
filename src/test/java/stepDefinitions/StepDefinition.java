@@ -44,7 +44,7 @@ public class StepDefinition extends UtilMethods {
 	testDataPayloads data = new testDataPayloads();
 
 	@Given("Add Place Payload with {string} {string} {string} {string}")
-	public void payload(String name, String address, String types, String language) throws FileNotFoundException {
+	public void set_payload(String name, String address, String types, String language) throws FileNotFoundException {
 		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
 
 		log.info("Setting up Pay Load");
