@@ -1,6 +1,6 @@
-Feature: Title of your feature
+Feature: This is Google Map test feature
 
-@AddPlace @DeletePlace
+@AddPlace
 Scenario: Verify add place is working "<name>"
 	Given Add Place Payload with "<name>" "<address>" "<types>" "<language>"
 	When User call "AddPlaceAPI" with "POST" request
@@ -21,7 +21,7 @@ Scenario: Verify add place is working "<name>"
 	
 	
 
-@AddPlace @DeletePlace
+ @DeletePlace
 Scenario: Verify add place is working "<name>"
 	Given Add Place Payload with "<name>" "<address>" "<types>" "<language>"
 	When User call "AddPlaceAPI" with "POST" request
