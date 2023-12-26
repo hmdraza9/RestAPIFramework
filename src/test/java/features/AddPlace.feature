@@ -13,7 +13,7 @@ Scenario: Verify add place is working "<name>"
 	Then the API call is success with status code 200
 	And "status" in response body is "OK"
 	
-	Examples: 
+	Examples:
 		| name                     | address                    | types                                   | language |
 		| Test House - Add         | 123, Street, East Coast    | Grocery_Dairy_Snack_Beverages_Medicines | English  |
 		| Ahmed Villa - Add        | 2w1q2e, Street, West Coast | Grocery_Snack_Beverages                 | French   |
