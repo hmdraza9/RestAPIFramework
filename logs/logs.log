@@ -11025,3 +11025,82 @@ Actual  : 6t8u0o, Street, West Coast - 26-Dec-2023_14-42-58-881
 [INFO ] 2023-12-26 14:43:03.127 [main] StepDefinition - Validating response body value
 [INFO ] 2023-12-26 14:43:03.147 [main] StepDefinition - keyValue: status
 [INFO ] 2023-12-26 14:43:03.147 [main] StepDefinition - expectedValue: OK
+[INFO ] 2023-12-27 03:07:18.571 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:07:18.573 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:07:19.435 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:07:19.438 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:07:20.837 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:07:20.837 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:07:20.839 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:07:20.840 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-27 03:07:20.840 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-27 03:07:50.449 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:07:50.451 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:07:51.355 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:07:51.357 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:07:52.569 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:07:52.569 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:07:52.570 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:07:52.572 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-27 03:07:52.572 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-27 03:11:02.053 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:11:02.055 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:11:03.140 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:11:03.143 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:11:04.900 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:11:04.900 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:11:04.902 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:13:58.409 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:13:58.412 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:13:59.330 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:13:59.332 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:14:00.569 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:14:00.569 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:14:00.570 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:18:12.343 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:18:12.346 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:18:12.346 [main] StepDefinition - 1111
+[INFO ] 2023-12-27 03:18:13.210 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:18:13.213 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:18:14.382 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:18:14.382 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:18:14.383 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:20:27.322 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:20:27.327 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:20:27.327 [main] StepDefinition - 1111
+[INFO ] 2023-12-27 03:20:28.242 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:20:28.245 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:20:29.624 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:20:29.624 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:20:29.625 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:29:24.113 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:29:24.116 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:29:25.147 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:29:25.150 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:29:26.778 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:29:26.778 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:29:26.780 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jamsine","gender":"Female","id":4537,"status":"Hold"},"location":{"name":"Ajarbaijan","dimension":"602"},"episode":{"name":"New Alddin and Jamine S01E01","air_date":"27122023","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:29:26.782 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-27 03:29:26.782 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-27 03:29:27.133 [main] StepDefinition - keyValue: data.character.name
+[INFO ] 2023-12-27 03:29:27.134 [main] StepDefinition - ExpectedValue: Aladdin & Jamsine
+[INFO ] 2023-12-27 03:34:36.005 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:34:36.008 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:34:36.913 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:34:36.916 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:34:38.159 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:34:38.159 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:34:38.160 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jasmine-1","gender":"Female","id":4544,"status":"Hold"},"location":{"name":"Ajarbaijan-1","dimension":"602"},"episode":{"name":"New Alddin and Jasmine S01E01","air_date":"27122023-1","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:34:38.161 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-27 03:34:38.161 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-27 03:36:28.809 [main] StepDefinition - set_payload_graphql
+[INFO ] 2023-12-27 03:36:28.811 [main] StepDefinition - Setting up GraphQL Pay Load
+[INFO ] 2023-12-27 03:36:29.709 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-27 03:36:29.713 [main] StepDefinition - Calling API: graphqlAPI; HTTP Method: POST
+[INFO ] 2023-12-27 03:36:30.986 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-27 03:36:30.986 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-27 03:36:30.987 [main] StepDefinition - Response Body: {"data":{"character":{"name":"Aladdin & Jasmine","gender":"Female","id":4545,"status":"Hold"},"location":{"name":"Ajarbaijan-1","dimension":"602"},"episode":{"name":"New Alddin and Jasmine S01E01","air_date":"27122023-1","episode":"Netflix"},"characters":{"info":{"count":1},"result":[{"id":4535,"name":"Aladdin","type":"Fiction","status":"Inactive","species":"human"}]},"episodes":{"info":{"count":2},"result":[{"id":872,"name":"tom and jerry","air_date":"abc","episode":"hulu","created":"2023-07-20T15:11:08.197Z"},{"id":2253,"name":"tom and jerry","air_date":"abc","episode":"Cartone","created":"2023-11-08T09:22:40.417Z"}]}}}
+[INFO ] 2023-12-27 03:36:30.989 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-27 03:36:30.989 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-27 03:36:31.287 [main] StepDefinition - keyValue: data.character.name
+[INFO ] 2023-12-27 03:36:31.287 [main] StepDefinition - ExpectedValue: Aladdin & Jasmine

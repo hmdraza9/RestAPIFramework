@@ -82,7 +82,7 @@ public class UtilMethods {
 //		return ap;
 //	}
 
-	public RequestSpecification requestSpecification() throws FileNotFoundException {
+	public RequestSpecification requestSpecificationMap(String apiType) throws FileNotFoundException {
 
 		RestAssured.baseURI = readPropFile("baseURL");
 
@@ -91,11 +91,18 @@ public class UtilMethods {
 					new FileOutputStream("logs/HTTPLogs/requestLogger_" + getTime() + ".log"));
 			PrintStream resStream = new PrintStream(
 					new FileOutputStream("logs/HTTPLogs/responseLogger_" + getTime() + ".log"));
-			req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
-					.addQueryParam("key", readPropFile("mapKey"))
-					.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
-					.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
-					.setUrlEncodingEnabled(false).build();
+			switch(apiType.toLowerCase()){
+				case "graphql" : req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
+						.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
+						.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
+						.setUrlEncodingEnabled(false).build();
+					break;
+				case "map" : req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
+						.addQueryParam("key", readPropFile("mapKey"))
+						.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
+						.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
+						.setUrlEncodingEnabled(false).build();
+			}
 			return req;
 		}
 		return req;
@@ -122,7 +129,6 @@ public class UtilMethods {
 			e.printStackTrace();
 		}
 		value = pr.getProperty(key);
-		log.info("Value read from property file: " + value);
 
 		return value;
 	}

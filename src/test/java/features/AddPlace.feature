@@ -1,7 +1,7 @@
 Feature: This is Google Map test feature - Add Place
 
  @AddPlace @Regression
-Scenario: Verify add place is working "<name>"
+ Scenario Outline: Verify add place is working "<name>"
 	Given Add Place Payload with "<name>" "<address>" "<types>" "<language>"
 	When User call "AddPlaceAPI" with "POST" request
 	Then the API call is success with status code 200
@@ -25,5 +25,11 @@ Scenario: Verify add place is working "<name>"
 		| Puma Shoes - Add         | 1q8u5r, Street, West Coast | Grocery_Snack_Beverages                 | Punjabi  |
 		| Lifestyle Clothing - Add | 9i0o8u, Street, West Coast | Grocery_Snack_Beverages                 | French   |
 		| Shopers Stop - Add       | 6t8u0o, Street, West Coast | Grocery_Snack_Beverages                 | Sanskrit |
-	
-	
+
+
+	@GraphQL @Regression
+	Scenario: Verify GraphQL
+		Given GraphQL Payload
+		When User call "graphqlAPI" with "POST" request
+		Then the API call is success with status code 200
+		And "data.character.name" in response body is "Aladdin & Jasmine"

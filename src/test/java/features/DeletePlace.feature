@@ -1,7 +1,7 @@
 Feature: This is Google Map test feature - Delete Place
 
  @DeletePlace @Regression
-Scenario: Verify add place is working "<name>"
+Scenario Outline: Verify add place is working "<name>"
 	Given Add Place Payload with "<name>" "<address>" "<types>" "<language>"
 	When User call "AddPlaceAPI" with "POST" request
 	Then the API call is success with status code 200

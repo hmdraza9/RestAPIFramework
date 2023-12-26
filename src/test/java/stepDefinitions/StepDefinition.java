@@ -41,6 +41,8 @@ public class StepDefinition extends UtilMethods {
 
 	APIResources resourceAPI;
 
+	String apiType;
+
 	testDataPayloads data = new testDataPayloads();
 
 	@Given("Add Place Payload with {string} {string} {string} {string}")
@@ -49,9 +51,24 @@ public class StepDefinition extends UtilMethods {
 
 		log.info("Setting up Pay Load");
 
+		apiType = "map";
+
 		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
-		reqSpec = given().spec(requestSpecification()).body(payload.addPlaceBodySetUp(name, address, types, language));
+		reqSpec = given().spec(requestSpecificationMap(apiType)).body(payload.addPlaceBodySetUp(name, address, types, language));
+
+	}
+
+	@Given("GraphQL Payload")
+	public void set_payload_graphql() throws FileNotFoundException {
+		log.info(Thread.currentThread().getStackTrace()[1].getMethodName());
+
+		log.info("Setting up GraphQL Pay Load");
+
+		apiType = "graphql";
+
+		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		reqSpec = given().spec(requestSpecificationMap(apiType)).body(payload.graphQLPayload());
 
 	}
 
@@ -103,7 +120,7 @@ public class StepDefinition extends UtilMethods {
 
 		log.info("keyValue: " + keyValue);
 
-		log.info("expectedValue: " + expectedValue);
+		log.info("ExpectedValue: " + expectedValue);
 
 	}
 
@@ -117,7 +134,7 @@ public class StepDefinition extends UtilMethods {
 
 		resourceAPI = APIResources.valueOf("GetPlaceAPI");
 
-		reqSpec = given().spec(requestSpecification()).queryParam("place_id", placeID);
+		reqSpec = given().spec(requestSpecificationMap(apiType)).queryParam("place_id", placeID);
 
 		user_call_with_request(resource, "GET");
 
@@ -135,7 +152,7 @@ public class StepDefinition extends UtilMethods {
 
 		log.info("In delete Place Payload step");
 
-		reqSpec = given().spec(requestSpecification()).body(payload.deletePlacePayload(placeID));
+		reqSpec = given().spec(requestSpecificationMap(apiType)).body(payload.deletePlacePayload(placeID));
 
 		log.info("Deletion response: " + res.asString());
 

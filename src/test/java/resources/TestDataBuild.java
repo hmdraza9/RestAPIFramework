@@ -39,4 +39,8 @@ public class TestDataBuild {
 		return "{\"place_id\":\"" + placeID + "\"}";
 	}
 
+	public String graphQLPayload() {
+		return "{\"query\":\"query($charId:Int!, $epiId:Int!,$locId:Int!,$charName:String!)\\n{\\n  character(characterId:$charId) {\\n    name\\n    gender\\n    id\\n    status\\n  }\\n  location(locationId: $locId) {\\n    name\\n    dimension\\n  }\\n  episode(episodeId: $epiId) {\\n    name\\n    air_date\\n    episode\\n  }\\n  characters(filters: {name: $charName}) {\\n    info {\\n      count\\n    }\\n    result {\\n      id\\n      name\\n      type\\n      status\\n      species\\n    }\\n  }\\n  episodes(filters: {name: \\\"tom and jerry\\\"}) {\\n    info {\\n      count\\n    }\\n    result {\\n      id\\n      name\\n      air_date\\n      episode\\n      created\\n    }\\n  }\\n}\\n\",\"variables\":{\"charId\":4545,\"epiId\":3733,\"locId\":5076,\"charName\":\"Aladdin\"}}";
+	}
+
 }
