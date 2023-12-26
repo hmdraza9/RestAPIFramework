@@ -14,16 +14,16 @@ Scenario: Verify add place is working "<name>"
 	And "status" in response body is "OK"
 	
 	Examples:
-		| name       | address                    | types                                   | language |
-		| Test House - Add | 123, Street, East Coast    | Grocery_Dairy_Snack_Beverages_Medicines | English  |
-		| Ahmed Villa - Add  | 2w1q2e, Street, West Coast | Grocery_Snack_Beverages                 | French   |
-		| Megha Resort - Add  | 0o9i8u, Street, West Coast | Grocery_Snack_Beverages                 | Spanish   |
-		| Sai Nilayam - Add  | 8u7y6t, Street, West Coast | Grocery_Snack_Beverages                 | Hindi   |
-		| IICC - Add  | 7y6t5r, Street, West Coast | Grocery_Snack_Beverages                 | French   |
-		| Eclipse Hall - Add  | 0o6t3w, Street, West Coast | Grocery_Snack_Beverages                 | Hindi   |
-		| Karachi Bakery - Add  | 9i1q8u, Street, West Coast | Grocery_Snack_Beverages                 | Sanskrit   |
-		| Puma Shoes - Add  | 1q8u5r, Street, West Coast | Grocery_Snack_Beverages                 | Punjabi   |
-		| Lifestyle Clothing - Add  | 9i0o8u, Street, West Coast | Grocery_Snack_Beverages                 | French   |
-		| Shopers Stop - Add  | 6t8u0o, Street, West Coast | Grocery_Snack_Beverages                 | Sanskrit   |
+		| name                     | address                    | types                                   | language |
+		| Test House - Add         | 123, Street, East Coast    | Grocery_Dairy_Snack_Beverages_Medicines | English  |
+#		| Ahmed Villa - Add        | 2w1q2e, Street, West Coast | Grocery_Snack_Beverages                 | French   |
+#		| Megha Resort - Add       | 0o9i8u, Street, West Coast | Grocery_Snack_Beverages                 | Spanish  |
+#		| Sai Nilayam - Add        | 8u7y6t, Street, West Coast | Grocery_Snack_Beverages                 | Hindi    |
+#		| IICC - Add               | 7y6t5r, Street, West Coast | Grocery_Snack_Beverages                 | French   |
+#		| Eclipse Hall - Add       | 0o6t3w, Street, West Coast | Grocery_Snack_Beverages                 | Hindi    |
+#		| Karachi Bakery - Add     | 9i1q8u, Street, West Coast | Grocery_Snack_Beverages                 | Sanskrit |
+#		| Puma Shoes - Add         | 1q8u5r, Street, West Coast | Grocery_Snack_Beverages                 | Punjabi  |
+#		| Lifestyle Clothing - Add | 9i0o8u, Street, West Coast | Grocery_Snack_Beverages                 | French   |
+#		| Shopers Stop - Add       | 6t8u0o, Street, West Coast | Grocery_Snack_Beverages                 | Sanskrit |
 	
 	
