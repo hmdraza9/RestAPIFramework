@@ -1,0 +1,9 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+{
+
+  "charId" : 3,
+  "epiId" : 1,
+  "locId" : 8,
+  "charName":"Rahul"
+  
+}

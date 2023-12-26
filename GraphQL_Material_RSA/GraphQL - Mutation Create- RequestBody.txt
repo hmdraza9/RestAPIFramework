@@ -1,0 +1,18 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+mutation($locName:String!, $epAir_date:String!,$charName:String!)
+{
+  createLocation(location:{name:$locName, type:"Middle East",dimension:"602"})
+  {
+    id
+  }
+  createCharacter(character:{name:$charName, type:"Fiction & Fantasy", 
+    status:"Hold",species:"human",gender:"Female",image:"ald5065",originId:5065,locationId:5066})
+  {
+    id
+  }
+  createEpisode(episode:{name:"New Alddin and Jamine S01E01", 
+    air_date:$epAir_date, episode:"Netflix"})
+  {
+    id
+  }
+}

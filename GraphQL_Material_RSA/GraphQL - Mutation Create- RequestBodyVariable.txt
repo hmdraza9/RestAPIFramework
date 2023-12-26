@@ -1,0 +1,6 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+{
+  "epAir_date": "27122023-1",
+  "locName": "Ajarbaijan-1",
+  "charName": "Aladdin & Jamsine-1"
+}

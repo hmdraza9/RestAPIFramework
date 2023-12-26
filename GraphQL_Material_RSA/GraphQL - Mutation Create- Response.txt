@@ -1,0 +1,14 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+{
+  "data": {
+    "createLocation": {
+      "id": 5073
+    },
+    "createCharacter": {
+      "id": 4541
+    },
+    "createEpisode": {
+      "id": 3730
+    }
+  }
+}

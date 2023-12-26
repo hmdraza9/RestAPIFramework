@@ -10955,3 +10955,73 @@ Actual  : 123, Street, East Coast - 26-Dec-2023_14-04-36-368
 [INFO ] 2023-12-26 14:04:40.074 [main] StepDefinition - Validating response body value
 [INFO ] 2023-12-26 14:04:40.096 [main] StepDefinition - keyValue: status
 [INFO ] 2023-12-26 14:04:40.096 [main] StepDefinition - expectedValue: OK
+[INFO ] 2023-12-26 14:20:17.162 [main] StepDefinition - set_payload
+[INFO ] 2023-12-26 14:20:17.164 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-26 14:20:18.235 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-26 14:20:18.237 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2023-12-26 14:20:20.024 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2023-12-26 14:20:20.033 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-26 14:20:20.034 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-26 14:20:20.040 [main] StepDefinition - Response Body: {"status":"OK","place_id":"d6996cec71918771a94370627a2e801e","scope":"APP","reference":"274ff0c62f168bf8caa280cbb0117947274ff0c62f168bf8caa280cbb0117947","id":"274ff0c62f168bf8caa280cbb0117947"}
+[INFO ] 2023-12-26 14:20:20.044 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-26 14:20:20.045 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-26 14:20:20.161 [main] StepDefinition - keyValue: status
+[INFO ] 2023-12-26 14:20:20.161 [main] StepDefinition - expectedValue: OK
+[INFO ] 2023-12-26 14:20:20.163 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-26 14:20:20.163 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-26 14:20:20.175 [main] StepDefinition - keyValue: scope
+[INFO ] 2023-12-26 14:20:20.175 [main] StepDefinition - expectedValue: APP
+[INFO ] 2023-12-26 14:20:20.179 [main] StepDefinition - verify_data_for_string
+[INFO ] 2023-12-26 14:20:20.179 [main] StepDefinition - In verify data step
+[INFO ] 2023-12-26 14:20:20.187 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-26 14:20:20.188 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2023-12-26 14:20:20.953 [main] StepDefinition - 
+Expected: 6t8u0o, Street, West Coast
+Actual  : 6t8u0o, Street, West Coast - 26-Dec-2023_14-20-17-973
+[INFO ] 2023-12-26 14:20:20.955 [main] StepDefinition - delete_place_payload
+[INFO ] 2023-12-26 14:20:20.955 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2023-12-26 14:20:20.967 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Shopers Stop - Add","phone_number":"+965 123123","address":"6t8u0o, Street, West Coast - 26-Dec-2023_14-20-17-973","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Sanskrit"}
+[INFO ] 2023-12-26 14:20:20.968 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-26 14:20:20.968 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2023-12-26 14:20:22.158 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-26 14:20:22.159 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-26 14:20:22.159 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2023-12-26 14:20:22.161 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-26 14:20:22.161 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-26 14:20:22.177 [main] StepDefinition - keyValue: status
+[INFO ] 2023-12-26 14:20:22.177 [main] StepDefinition - expectedValue: OK
+[INFO ] 2023-12-26 14:42:58.066 [main] StepDefinition - set_payload
+[INFO ] 2023-12-26 14:42:58.070 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2023-12-26 14:42:59.152 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-26 14:42:59.153 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2023-12-26 14:43:00.885 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2023-12-26 14:43:00.893 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-26 14:43:00.893 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-26 14:43:00.899 [main] StepDefinition - Response Body: {"status":"OK","place_id":"f052d80061ac5cc5b6793f6c8e8b6bcb","scope":"APP","reference":"657d22f2eb8a5c7eb0a0c989462d6e3c657d22f2eb8a5c7eb0a0c989462d6e3c","id":"657d22f2eb8a5c7eb0a0c989462d6e3c"}
+[INFO ] 2023-12-26 14:43:00.903 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-26 14:43:00.903 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-26 14:43:01.013 [main] StepDefinition - keyValue: status
+[INFO ] 2023-12-26 14:43:01.014 [main] StepDefinition - expectedValue: OK
+[INFO ] 2023-12-26 14:43:01.015 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-26 14:43:01.015 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-26 14:43:01.026 [main] StepDefinition - keyValue: scope
+[INFO ] 2023-12-26 14:43:01.026 [main] StepDefinition - expectedValue: APP
+[INFO ] 2023-12-26 14:43:01.031 [main] StepDefinition - verify_data_for_string
+[INFO ] 2023-12-26 14:43:01.031 [main] StepDefinition - In verify data step
+[INFO ] 2023-12-26 14:43:01.040 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-26 14:43:01.041 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2023-12-26 14:43:01.976 [main] StepDefinition - 
+Expected: 6t8u0o, Street, West Coast
+Actual  : 6t8u0o, Street, West Coast - 26-Dec-2023_14-42-58-881
+[INFO ] 2023-12-26 14:43:01.977 [main] StepDefinition - delete_place_payload
+[INFO ] 2023-12-26 14:43:01.977 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2023-12-26 14:43:01.985 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Shopers Stop - Add","phone_number":"+965 123123","address":"6t8u0o, Street, West Coast - 26-Dec-2023_14-42-58-881","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Sanskrit"}
+[INFO ] 2023-12-26 14:43:01.987 [main] StepDefinition - user_call_with_request
+[INFO ] 2023-12-26 14:43:01.987 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2023-12-26 14:43:03.122 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2023-12-26 14:43:03.122 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2023-12-26 14:43:03.122 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2023-12-26 14:43:03.125 [main] StepDefinition - in_response_body_is
+[INFO ] 2023-12-26 14:43:03.127 [main] StepDefinition - Validating response body value
+[INFO ] 2023-12-26 14:43:03.147 [main] StepDefinition - keyValue: status
+[INFO ] 2023-12-26 14:43:03.147 [main] StepDefinition - expectedValue: OK

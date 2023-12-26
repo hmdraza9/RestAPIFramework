@@ -1,0 +1,14 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+{
+  "data": {
+    "deleteEpisodes": {
+      "episodesDeleted": 0
+    },
+    "deleteLocations": {
+      "locationsDeleted": 0
+    },
+    "deleteCharacters": {
+      "charactersDeleted": 0
+    }
+  }
+}

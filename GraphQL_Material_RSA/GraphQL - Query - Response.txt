@@ -1,0 +1,55 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+{
+  "data": {
+    "character": {
+      "name": "Aladdin & Jamsine",
+      "gender": "Female",
+      "id": 4537,
+      "status": "Hold"
+    },
+    "location": {
+      "name": "Ajarbaijan",
+      "dimension": "602"
+    },
+    "episode": {
+      "name": "New Alddin and Jamine S01E01",
+      "air_date": "27122023",
+      "episode": "Netflix"
+    },
+    "characters": {
+      "info": {
+        "count": 1
+      },
+      "result": [
+        {
+          "id": 4535,
+          "name": "Aladdin",
+          "type": "Fiction",
+          "status": "Inactive",
+          "species": "human"
+        }
+      ]
+    },
+    "episodes": {
+      "info": {
+        "count": 2
+      },
+      "result": [
+        {
+          "id": 872,
+          "name": "tom and jerry",
+          "air_date": "abc",
+          "episode": "hulu",
+          "created": "2023-07-20T15:11:08.197Z"
+        },
+        {
+          "id": 2253,
+          "name": "tom and jerry",
+          "air_date": "abc",
+          "episode": "Cartone",
+          "created": "2023-11-08T09:22:40.417Z"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+query($charId:Int!, $epiId:Int!,$locId:Int!,$charName:String!)
+{
+  character(characterId:$charId) {
+    name
+    gender
+    id
+    status
+  }
+  location(locationId: $locId) {
+    name
+    dimension
+  }
+  episode(episodeId: $epiId) {
+    name
+    air_date
+    episode
+  }
+  characters(filters: {name: $charName}) {
+    info {
+      count
+    }
+    result {
+      id
+      name
+      type
+      status
+      species
+    }
+  }
+  episodes(filters: {name: "tom and jerry"}) {
+    info {
+      count
+    }
+    result {
+      id
+      name
+      air_date
+      episode
+      created
+    }
+  }
+}

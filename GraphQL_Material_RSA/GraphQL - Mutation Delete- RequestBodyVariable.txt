@@ -1,0 +1,6 @@
+#URL - https://rahulshettyacademy.com/gq/graphql
+{
+  "delEpId": 333,
+  "delLocId": 333,
+  "delCharId": 333
+}

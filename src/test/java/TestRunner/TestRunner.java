@@ -9,11 +9,13 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 //		features = "src/test/java/features/AddPlace.feature", 
 		features = "src/test/java/features", 
-		glue = { "stepDefinitions" }, 
+		glue = { "stepDefinitions" },
+		plugin = { "pretty", "html:target/cucumber-reports.html"},
 		tags = "@AddPlace",
-		monochrome = true,
+		monochrome = true
+//		,
 //		plugin = "json:cucumber-report.json"
-		plugin ="json:target/jsonReports/cucumber-report.json"
+//		plugin ="json:target/jsonReports/cucumber-report.json"
 
 )
 public class TestRunner {
