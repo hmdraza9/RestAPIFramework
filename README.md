@@ -16,4 +16,4 @@ Added delete place
 
 See Cucumber reports online, set ENV variable, ref: https://reports.cucumber.io/ [ login with github ], https://stackoverflow.com/questions/7048216/environment-variables-in-eclipse, same using MAVEN from command
 
-GraphQL Added, type=query added, complete with mutations create and delete 
+GraphQL Added, type=query added, pending complete with mutations create and delete 
