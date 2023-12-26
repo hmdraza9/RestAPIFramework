@@ -13,3 +13,5 @@ Completed as E2E scenario, add place, verify place
 Added delete place
 
 23 Dec 2023 - Some changes
+
+See Cucumber reports online, set ENV variable, ref: https://reports.cucumber.io/ [ login with github ], https://stackoverflow.com/questions/7048216/environment-variables-in-eclipse, same using MAVEN from command
