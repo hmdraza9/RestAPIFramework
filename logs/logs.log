@@ -11104,3 +11104,21 @@ Actual  : 6t8u0o, Street, West Coast - 26-Dec-2023_14-42-58-881
 [INFO ] 2023-12-27 03:36:30.989 [main] StepDefinition - Validating response body value
 [INFO ] 2023-12-27 03:36:31.287 [main] StepDefinition - keyValue: data.character.name
 [INFO ] 2023-12-27 03:36:31.287 [main] StepDefinition - ExpectedValue: Aladdin & Jasmine
+[INFO ] 2024-01-19 16:42:07.582 [main] Guru99Login - user_Logs_in
+[INFO ] 2024-01-19 16:42:07.584 [main] Guru99Login - Setting up Pay Load
+[INFO ] 2024-01-19 16:42:55.555 [main] Guru99Login - user_Logs_in
+[INFO ] 2024-01-19 16:42:55.557 [main] Guru99Login - Setting up Pay Load
+[INFO ] 2024-01-19 16:45:05.762 [main] Guru99Login - user_Logs_in
+[INFO ] 2024-01-19 16:45:05.764 [main] Guru99Login - Setting up Pay Load
+[INFO ] 2024-01-19 17:08:51.323 [main] Guru99Login - User_set_up_the_browser
+[INFO ] 2024-01-19 17:08:51.325 [main] Guru99Login - Setting up Pay Load
+[INFO ] 2024-01-19 17:09:04.110 [main] Guru99Login - user_verifies_the_login_success
+[INFO ] 2024-01-19 17:09:04.161 [main] Guru99Login - user_logout_the_application
+[INFO ] 2024-01-19 17:10:56.532 [main] Guru99Login - User_set_up_the_browser
+[INFO ] 2024-01-19 17:10:56.534 [main] Guru99Login - Setting up Pay Load
+[INFO ] 2024-01-19 17:11:04.230 [main] Guru99Login - user_verifies_the_login_success
+[INFO ] 2024-01-19 17:11:04.267 [main] Guru99Login - user_logout_the_application
+[INFO ] 2024-01-19 17:11:35.318 [main] Guru99Login - User_set_up_the_browser
+[INFO ] 2024-01-19 17:11:35.319 [main] Guru99Login - Setting up Pay Load
+[INFO ] 2024-01-19 17:11:42.692 [main] Guru99Login - user_verifies_the_login_success
+[INFO ] 2024-01-19 17:11:42.749 [main] Guru99Login - user_logout_the_application
