@@ -1,0 +1,59 @@
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 09:08:51 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "193991d70f49e1956416491e41fd73fe",
+    "scope": "APP",
+    "reference": "40790945e5afb208b9dafceabbbce72540790945e5afb208b9dafceabbbce725",
+    "id": "40790945e5afb208b9dafceabbbce725"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 09:08:51 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 279
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "32.98977",
+        "longitude": "-32.98977"
+    },
+    "accuracy": "50",
+    "name": "Puma Shoes - Add",
+    "phone_number": "+965 123123",
+    "address": "1q8u5r, Street, West Coast - 24-Mar-2024_14-38-51-173",
+    "types": "Grocery,Snack,Beverages",
+    "website": "www.google.com",
+    "language": "Punjabi"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 09:08:54 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}

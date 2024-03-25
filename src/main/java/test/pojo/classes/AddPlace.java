@@ -4,11 +4,13 @@ import java.util.List;
 
 public class AddPlace {
 	Location LocationObject;
+	Nicknames NicknameObject;
 	private String accuracy;
 	private String name;
 	private String phone_number;
 	private String address;
 	private List<String> types;
+	private List<String> voyage;
 	private String website;
 	private String language;
 
@@ -16,6 +18,10 @@ public class AddPlace {
 
 	public Location getLocation() {
 		return LocationObject;
+	}
+
+	public Nicknames getNicknames() {
+		return NicknameObject;
 	}
 
 	public String getAccuracy() {
@@ -38,6 +44,10 @@ public class AddPlace {
 		return types;
 	}
 
+	public List<String> getVoyage() {
+		return voyage;
+	}
+
 	public String getWebsite() {
 		return website;
 	}
@@ -50,6 +60,10 @@ public class AddPlace {
 
 	public void setLocation(Location locationObject) {
 		this.LocationObject = locationObject;
+	}
+
+	public void setNicknames(Nicknames NicknameObject) {
+		this.NicknameObject = NicknameObject;
 	}
 
 	public void setAccuracy(String accuracy) {
@@ -70,6 +84,10 @@ public class AddPlace {
 
 	public void setTypes(List<String> types) {
 		this.types = types;
+	}
+
+	public void setVoyage(List<String> voyage) {
+		this.voyage = voyage;
 	}
 
 	public void setWebsite(String website) {

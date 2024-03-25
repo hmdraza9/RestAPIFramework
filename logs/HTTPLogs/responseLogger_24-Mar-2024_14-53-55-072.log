@@ -1,0 +1,59 @@
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 09:23:56 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "083838a24a95ae0f5b13bfb450cc3cbc",
+    "scope": "APP",
+    "reference": "00c166c80acd55d1a6072e22a44b60cd00c166c80acd55d1a6072e22a44b60cd",
+    "id": "00c166c80acd55d1a6072e22a44b60cd"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 09:23:56 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 279
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "32.98977",
+        "longitude": "-32.98977"
+    },
+    "accuracy": "50",
+    "name": "Ahmed Villa - Add",
+    "phone_number": "+965 123123",
+    "address": "2w1q2e, Street, West Coast - 24-Mar-2024_14-53-55-073",
+    "types": "Grocery,Snack,Beverages",
+    "website": "www.google.com",
+    "language": "French"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 09:23:58 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}

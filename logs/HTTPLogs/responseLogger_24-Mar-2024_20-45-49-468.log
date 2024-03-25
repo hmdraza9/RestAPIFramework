@@ -1,0 +1,59 @@
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 15:15:49 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "198db772f0dcb231fbad8b0cc8d9c562",
+    "scope": "APP",
+    "reference": "1990ba7171ecde2fa92a8e342d2a6efe1990ba7171ecde2fa92a8e342d2a6efe",
+    "id": "1990ba7171ecde2fa92a8e342d2a6efe"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 15:15:51 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 281
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "32.98977",
+        "longitude": "-32.98977"
+    },
+    "accuracy": "50",
+    "name": "Megha Resort - Add",
+    "phone_number": "+965 123123",
+    "address": "0o9i8u, Street, West Coast - 24-Mar-2024_20-45-49-469",
+    "types": "Grocery,Snack,Beverages",
+    "website": "www.google.com",
+    "language": "Spanish"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 15:15:55 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}

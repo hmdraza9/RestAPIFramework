@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import rest.assured.utils.UtilMethods;
 import test.pojo.classes.AddPlace;
 import test.pojo.classes.Location;
+import test.pojo.classes.Nicknames;
 
 public class TestDataBuild {
 
@@ -19,18 +20,25 @@ public class TestDataBuild {
 		log.info("Add place body setup.");
 		AddPlace ap = new AddPlace();
 		Location apLoc = new Location();
+		Nicknames apNick = new Nicknames();
 		apLoc.setLat(32.98977F);
 		apLoc.setLng(-32.98977F);
 		ap.setLocation(apLoc);
+		ap.setNicknames(apNick);
 		ap.setAccuracy("50");
 		ap.setName(name);
 		ap.setPhone_number("+965 123123");
 		ap.setAddress(address + " - " + UtilMethods.getTime());
 		List<String> typeList = Arrays.asList(types.split("_"));
+		List<String> voyageList = Arrays.asList(new String[] { "New Delhi", "Pune", "Mumbai", "Hyderabad" });
 
+		ap.setVoyage(voyageList);
 		ap.setTypes(typeList);
 		ap.setWebsite("www.google.com");
 		ap.setLanguage(language);
+
+		apNick.setSchoolName("dude");
+		apNick.setHouseName("sam");
 
 		return ap;
 	}

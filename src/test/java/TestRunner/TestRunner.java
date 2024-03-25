@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/java/features", 
 		glue = { "stepDefinitions" },
 		plugin = { "pretty", "html:target/cucumber-reports.html"},
-		tags = "@GraphQL",
+		tags = "@AddPlace",
 		monochrome = true
 //		,
 //		plugin = "json:cucumber-report.json"

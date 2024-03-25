@@ -1,0 +1,59 @@
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 15:18:14 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "73bc172ff317cfa7cbca632da17207a7",
+    "scope": "APP",
+    "reference": "9a71c258d829648efe0bde6983f412909a71c258d829648efe0bde6983f41290",
+    "id": "9a71c258d829648efe0bde6983f41290"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 15:18:14 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 278
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "32.98977",
+        "longitude": "-32.98977"
+    },
+    "accuracy": "50",
+    "name": "Sai Nilayam - Add",
+    "phone_number": "+965 123123",
+    "address": "8u7y6t, Street, West Coast - 24-Mar-2024_20-48-14-331",
+    "types": "Grocery,Snack,Beverages",
+    "website": "www.google.com",
+    "language": "Hindi"
+}
+HTTP/1.1 200 OK
+Date: Sun, 24 Mar 2024 15:18:17 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
