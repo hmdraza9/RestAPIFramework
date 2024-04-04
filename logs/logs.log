@@ -13464,3 +13464,703 @@ Actual  : 123, Street, East Coast - 24-Mar-2024_20-52-34-354
 [INFO ] 2024-03-24 20:52:44.553 [main] StepDefinition - Validating response body value
 [INFO ] 2024-03-24 20:52:44.571 [main] StepDefinition - keyValue: status
 [INFO ] 2024-03-24 20:52:44.571 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:04.476 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:04.478 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:05.303 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:05.303 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:06.480 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:06.481 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:06.481 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:06.483 [main] StepDefinition - Response Body: {"status":"OK","place_id":"8cbed6428a411301f8a2d4c579cbdcbc","scope":"APP","reference":"644f4f3bf4873d7b679de51d99cbbad3644f4f3bf4873d7b679de51d99cbbad3","id":"644f4f3bf4873d7b679de51d99cbbad3"}
+[INFO ] 2024-04-04 16:41:06.484 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:06.484 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:06.533 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:06.534 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:06.535 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:06.535 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:06.547 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:06.547 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:06.548 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:06.548 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:06.550 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:06.551 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:07.433 [main] StepDefinition - 
+Expected: 123, Street, East Coast
+Actual  : 123, Street, East Coast - 04-Apr-2024_16-41-04-983
+[INFO ] 2024-04-04 16:41:07.433 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:07.433 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:07.434 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Test House - Add","phone_number":"+965 123123","address":"123, Street, East Coast - 04-Apr-2024_16-41-04-983","types":"Grocery,Dairy,Snack,Beverages,Medicines","website":"www.google.com","language":"English"}
+[INFO ] 2024-04-04 16:41:07.436 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:07.436 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:09.512 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:09.512 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:09.512 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:09.513 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:09.513 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:09.521 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:09.521 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:09.530 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:09.530 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:09.537 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:09.538 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:09.653 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:09.654 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:09.654 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:09.655 [main] StepDefinition - Response Body: {"status":"OK","place_id":"8c021b8a335798e500636474e1b3a1e4","scope":"APP","reference":"faed190c375d17d7858494d3c9ec3dddfaed190c375d17d7858494d3c9ec3ddd","id":"faed190c375d17d7858494d3c9ec3ddd"}
+[INFO ] 2024-04-04 16:41:09.655 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:09.655 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:09.664 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:09.664 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:09.665 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:09.665 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:09.673 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:09.674 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:09.676 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:09.676 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:09.678 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:09.679 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:10.645 [main] StepDefinition - 
+Expected: 2w1q2e, Street, West Coast
+Actual  : 2w1q2e, Street, West Coast - 04-Apr-2024_16-41-09-533
+[INFO ] 2024-04-04 16:41:10.648 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:10.648 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:10.650 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Ahmed Villa - Add","phone_number":"+965 123123","address":"2w1q2e, Street, West Coast - 04-Apr-2024_16-41-09-533","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"French"}
+[INFO ] 2024-04-04 16:41:10.651 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:10.651 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:12.175 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:12.175 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:12.175 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:12.176 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:12.176 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:12.183 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:12.183 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:12.189 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:12.189 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:12.201 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:12.201 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:12.352 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:12.353 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:12.353 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:12.353 [main] StepDefinition - Response Body: {"status":"OK","place_id":"61b1a55802acd2cc4002e586b295cd58","scope":"APP","reference":"af5feeda0fa2bf816062360cc33e5c6caf5feeda0fa2bf816062360cc33e5c6c","id":"af5feeda0fa2bf816062360cc33e5c6c"}
+[INFO ] 2024-04-04 16:41:12.354 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:12.354 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:12.363 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:12.363 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:12.363 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:12.363 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:12.373 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:12.374 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:12.375 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:12.375 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:12.378 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:12.378 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:13.615 [main] StepDefinition - 
+Expected: 0o9i8u, Street, West Coast
+Actual  : 0o9i8u, Street, West Coast - 04-Apr-2024_16-41-12-197
+[INFO ] 2024-04-04 16:41:13.616 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:13.616 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:13.617 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Megha Resort - Add","phone_number":"+965 123123","address":"0o9i8u, Street, West Coast - 04-Apr-2024_16-41-12-197","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Spanish"}
+[INFO ] 2024-04-04 16:41:13.618 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:13.618 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:15.582 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:15.582 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:15.582 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:15.583 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:15.583 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:15.591 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:15.591 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:15.598 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:15.598 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:15.606 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:15.606 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:15.741 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:15.742 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:15.742 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:15.742 [main] StepDefinition - Response Body: {"status":"OK","place_id":"f07752cb5b26f06c5e8b4623432a2fb1","scope":"APP","reference":"d9607762f44b563baf4e5391ad4ca3bcd9607762f44b563baf4e5391ad4ca3bc","id":"d9607762f44b563baf4e5391ad4ca3bc"}
+[INFO ] 2024-04-04 16:41:15.743 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:15.743 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:15.750 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:15.751 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:15.751 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:15.751 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:15.758 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:15.758 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:15.759 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:15.759 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:15.760 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:15.760 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:16.816 [main] StepDefinition - 
+Expected: 8u7y6t, Street, West Coast
+Actual  : 8u7y6t, Street, West Coast - 04-Apr-2024_16-41-15-603
+[INFO ] 2024-04-04 16:41:16.817 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:16.817 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:16.819 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Sai Nilayam - Add","phone_number":"+965 123123","address":"8u7y6t, Street, West Coast - 04-Apr-2024_16-41-15-603","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Hindi"}
+[INFO ] 2024-04-04 16:41:16.820 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:16.820 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:18.171 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:18.171 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:18.171 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:18.172 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:18.172 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:18.180 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:18.180 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:18.186 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:18.187 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:18.195 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:18.195 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:18.300 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:18.301 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:18.301 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:18.301 [main] StepDefinition - Response Body: {"status":"OK","place_id":"a0463cf6eaf6c0b6bed81ba5ee4cf8c9","scope":"APP","reference":"09007d1230e039a3910d80397ceeb1fa09007d1230e039a3910d80397ceeb1fa","id":"09007d1230e039a3910d80397ceeb1fa"}
+[INFO ] 2024-04-04 16:41:18.302 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:18.302 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:18.310 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:18.311 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:18.311 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:18.311 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:18.320 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:18.320 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:18.320 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:18.321 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:18.322 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:18.322 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:19.184 [main] StepDefinition - 
+Expected: 7y6t5r, Street, West Coast
+Actual  : 7y6t5r, Street, West Coast - 04-Apr-2024_16-41-18-190
+[INFO ] 2024-04-04 16:41:19.185 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:19.185 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:19.186 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"IICC - Add","phone_number":"+965 123123","address":"7y6t5r, Street, West Coast - 04-Apr-2024_16-41-18-190","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"French"}
+[INFO ] 2024-04-04 16:41:19.187 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:19.187 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:20.468 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:20.469 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:20.469 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:20.469 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:20.469 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:20.474 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:20.475 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:20.480 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:20.480 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:20.488 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:20.488 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:20.647 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:20.648 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:20.648 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:20.648 [main] StepDefinition - Response Body: {"status":"OK","place_id":"8a20ebf4a0b027741dc8a83e8eeb840f","scope":"APP","reference":"0289e96f650ba60ce977ac6ef7e24e800289e96f650ba60ce977ac6ef7e24e80","id":"0289e96f650ba60ce977ac6ef7e24e80"}
+[INFO ] 2024-04-04 16:41:20.649 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:20.649 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:20.657 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:20.657 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:20.658 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:20.658 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:20.664 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:20.664 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:20.665 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:20.665 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:20.667 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:20.667 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:21.803 [main] StepDefinition - 
+Expected: 0o6t3w, Street, West Coast
+Actual  : 0o6t3w, Street, West Coast - 04-Apr-2024_16-41-20-484
+[INFO ] 2024-04-04 16:41:21.804 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:21.804 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:21.806 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Eclipse Hall - Add","phone_number":"+965 123123","address":"0o6t3w, Street, West Coast - 04-Apr-2024_16-41-20-484","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Hindi"}
+[INFO ] 2024-04-04 16:41:21.807 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:21.807 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:23.233 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:23.233 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:23.233 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:23.234 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:23.234 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:23.240 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:23.240 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:23.245 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:23.245 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:23.251 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:23.251 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:23.366 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:23.367 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:23.367 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:23.367 [main] StepDefinition - Response Body: {"status":"OK","place_id":"383b8b6f1ac55095c3458f3ed1d5a5b5","scope":"APP","reference":"8b41caaf4d5385b63deeaab50bff128f8b41caaf4d5385b63deeaab50bff128f","id":"8b41caaf4d5385b63deeaab50bff128f"}
+[INFO ] 2024-04-04 16:41:23.367 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:23.367 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:23.374 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:23.374 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:23.374 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:23.375 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:23.381 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:23.381 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:23.382 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:23.382 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:23.383 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:23.383 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:24.362 [main] StepDefinition - 
+Expected: 9i1q8u, Street, West Coast
+Actual  : 9i1q8u, Street, West Coast - 04-Apr-2024_16-41-23-248
+[INFO ] 2024-04-04 16:41:24.363 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:24.363 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:24.365 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Karachi Bakery - Add","phone_number":"+965 123123","address":"9i1q8u, Street, West Coast - 04-Apr-2024_16-41-23-248","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Sanskrit"}
+[INFO ] 2024-04-04 16:41:24.366 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:24.366 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:25.671 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:25.672 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:25.672 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:25.673 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:25.673 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:25.682 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:25.683 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:25.688 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:25.688 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:25.693 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:25.693 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:25.797 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:25.798 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:25.798 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:25.798 [main] StepDefinition - Response Body: {"status":"OK","place_id":"6fcf7af7fe5afd4d73e073b53fa208cc","scope":"APP","reference":"dd8ce450dc3511a3cae28b92372e283fdd8ce450dc3511a3cae28b92372e283f","id":"dd8ce450dc3511a3cae28b92372e283f"}
+[INFO ] 2024-04-04 16:41:25.799 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:25.799 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:25.806 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:25.807 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:25.807 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:25.807 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:25.814 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:25.814 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:25.816 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:25.816 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:25.817 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:25.817 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:26.728 [main] StepDefinition - 
+Expected: 1q8u5r, Street, West Coast
+Actual  : 1q8u5r, Street, West Coast - 04-Apr-2024_16-41-25-690
+[INFO ] 2024-04-04 16:41:26.728 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:26.728 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:26.730 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Puma Shoes - Add","phone_number":"+965 123123","address":"1q8u5r, Street, West Coast - 04-Apr-2024_16-41-25-690","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Punjabi"}
+[INFO ] 2024-04-04 16:41:26.730 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:26.731 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:28.130 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:28.130 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:28.130 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:28.131 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:28.131 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:28.139 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:28.139 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:28.144 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:28.144 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:28.150 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:28.150 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:28.251 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:28.251 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:28.251 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:28.251 [main] StepDefinition - Response Body: {"status":"OK","place_id":"5651d4e98afef5775a4e41cc4549d18a","scope":"APP","reference":"36acd7ce510924f92523b944d78701ee36acd7ce510924f92523b944d78701ee","id":"36acd7ce510924f92523b944d78701ee"}
+[INFO ] 2024-04-04 16:41:28.252 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:28.252 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:28.259 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:28.259 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:28.260 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:28.260 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:28.267 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:28.267 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:28.268 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:28.268 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:28.269 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:28.269 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:29.125 [main] StepDefinition - 
+Expected: 9i0o8u, Street, West Coast
+Actual  : 9i0o8u, Street, West Coast - 04-Apr-2024_16-41-28-147
+[INFO ] 2024-04-04 16:41:29.125 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:29.126 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:29.126 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Lifestyle Clothing - Add","phone_number":"+965 123123","address":"9i0o8u, Street, West Coast - 04-Apr-2024_16-41-28-147","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"French"}
+[INFO ] 2024-04-04 16:41:29.127 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:29.127 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:30.407 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:30.407 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:30.407 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:30.407 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:30.407 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:30.413 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:30.413 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:30.417 [main] StepDefinition - set_payload
+[INFO ] 2024-04-04 16:41:30.417 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:41:30.423 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:30.423 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:30.556 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:41:30.557 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:30.557 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:30.557 [main] StepDefinition - Response Body: {"status":"OK","place_id":"6603d289c749556160da667324433b1f","scope":"APP","reference":"0fb2a1545277cdd4e96386574d631b6c0fb2a1545277cdd4e96386574d631b6c","id":"0fb2a1545277cdd4e96386574d631b6c"}
+[INFO ] 2024-04-04 16:41:30.558 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:30.558 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:30.566 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:30.566 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:41:30.567 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:30.567 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:30.573 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:41:30.573 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:41:30.574 [main] StepDefinition - verify_data_for_string
+[INFO ] 2024-04-04 16:41:30.574 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:41:30.576 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:30.576 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:41:31.737 [main] StepDefinition - 
+Expected: 6t8u0o, Street, West Coast
+Actual  : 6t8u0o, Street, West Coast - 04-Apr-2024_16-41-30-419
+[INFO ] 2024-04-04 16:41:31.737 [main] StepDefinition - delete_place_payload
+[INFO ] 2024-04-04 16:41:31.737 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:41:31.738 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Shopers Stop - Add","phone_number":"+965 123123","address":"6t8u0o, Street, West Coast - 04-Apr-2024_16-41-30-419","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Sanskrit"}
+[INFO ] 2024-04-04 16:41:31.739 [main] StepDefinition - user_call_with_request
+[INFO ] 2024-04-04 16:41:31.739 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:41:33.104 [main] StepDefinition - the_api_call_is_success_with_status_code
+[INFO ] 2024-04-04 16:41:33.104 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:41:33.104 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:41:33.104 [main] StepDefinition - in_response_body_is
+[INFO ] 2024-04-04 16:41:33.104 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:41:33.119 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:41:33.119 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:46.262 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:46.263 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:46:46.963 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:46.963 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:48.068 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:46:48.069 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:48.070 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:48.073 [main] StepDefinition - Response Body: {"status":"OK","place_id":"5e0a1348e7996cba4105778cd2e23b92","scope":"APP","reference":"7d77140223f6263540c0e0b36da7fb4a7d77140223f6263540c0e0b36da7fb4a","id":"7d77140223f6263540c0e0b36da7fb4a"}
+[INFO ] 2024-04-04 16:46:48.075 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:48.075 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:48.111 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:48.111 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:48.112 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:48.112 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:48.118 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:46:48.119 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:46:48.120 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:48.120 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:46:48.122 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:48.122 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:46:49.005 [main] StepDefinition - 
+Expected: 123, Street, East Coast
+Actual  : 123, Street, East Coast - 04-Apr-2024_16-46-46-691
+[INFO ] 2024-04-04 16:46:49.006 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:49.006 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:46:49.009 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Test House - Add","phone_number":"+965 123123","address":"123, Street, East Coast - 04-Apr-2024_16-46-46-691","types":"Grocery,Dairy,Snack,Beverages,Medicines","website":"www.google.com","language":"English"}
+[INFO ] 2024-04-04 16:46:49.010 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:49.010 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:50.306 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.306 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:50.306 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:46:50.307 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.307 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:50.319 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:50.319 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:50.333 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.333 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:46:50.340 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.340 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:50.452 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:46:50.452 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.452 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:50.452 [main] StepDefinition - Response Body: {"status":"OK","place_id":"0b8f3166ed766d0086d4a8159000e827","scope":"APP","reference":"ee13fd385a796da112d943b2fc764999ee13fd385a796da112d943b2fc764999","id":"ee13fd385a796da112d943b2fc764999"}
+[INFO ] 2024-04-04 16:46:50.453 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.453 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:50.461 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:50.461 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:50.462 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.462 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:50.473 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:46:50.474 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:46:50.475 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.475 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:46:50.478 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:50.478 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:46:51.436 [main] StepDefinition - 
+Expected: 2w1q2e, Street, West Coast
+Actual  : 2w1q2e, Street, West Coast - 04-Apr-2024_16-46-50-337
+[INFO ] 2024-04-04 16:46:51.438 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:51.438 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:46:51.440 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Ahmed Villa - Add","phone_number":"+965 123123","address":"2w1q2e, Street, West Coast - 04-Apr-2024_16-46-50-337","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"French"}
+[INFO ] 2024-04-04 16:46:51.440 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:51.441 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:52.931 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:52.932 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:52.932 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:46:52.933 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:52.933 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:52.942 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:52.942 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:52.947 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:52.947 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:46:52.960 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:52.960 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:53.102 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:46:53.103 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:53.104 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:53.104 [main] StepDefinition - Response Body: {"status":"OK","place_id":"9e81a54047298b9a00fd2845a756e2e4","scope":"APP","reference":"4c79c12114b20e6abe6f3ef2e91ff2654c79c12114b20e6abe6f3ef2e91ff265","id":"4c79c12114b20e6abe6f3ef2e91ff265"}
+[INFO ] 2024-04-04 16:46:53.104 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:53.104 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:53.112 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:53.113 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:53.113 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:53.113 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:53.122 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:46:53.122 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:46:53.122 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:53.122 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:46:53.124 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:53.125 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:46:54.202 [main] StepDefinition - 
+Expected: 0o9i8u, Street, West Coast
+Actual  : 0o9i8u, Street, West Coast - 04-Apr-2024_16-46-52-956
+[INFO ] 2024-04-04 16:46:54.203 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:54.203 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:46:54.205 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Megha Resort - Add","phone_number":"+965 123123","address":"0o9i8u, Street, West Coast - 04-Apr-2024_16-46-52-956","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Spanish"}
+[INFO ] 2024-04-04 16:46:54.206 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:54.206 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:55.733 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.733 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:55.735 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:46:55.737 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.737 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:55.746 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:55.747 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:55.754 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.754 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:46:55.761 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.761 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:55.909 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:46:55.910 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.910 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:55.911 [main] StepDefinition - Response Body: {"status":"OK","place_id":"6f2a2d4fc4a9868aa0a08f96591ce87a","scope":"APP","reference":"b964d8725156e8ff5f44d25ddef7d49db964d8725156e8ff5f44d25ddef7d49d","id":"b964d8725156e8ff5f44d25ddef7d49d"}
+[INFO ] 2024-04-04 16:46:55.911 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.911 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:55.919 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:55.919 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:55.919 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.919 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:55.926 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:46:55.926 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:46:55.926 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.926 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:46:55.928 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:55.928 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:46:56.765 [main] StepDefinition - 
+Expected: 8u7y6t, Street, West Coast
+Actual  : 8u7y6t, Street, West Coast - 04-Apr-2024_16-46-55-758
+[INFO ] 2024-04-04 16:46:56.766 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:56.766 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:46:56.769 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Sai Nilayam - Add","phone_number":"+965 123123","address":"8u7y6t, Street, West Coast - 04-Apr-2024_16-46-55-758","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Hindi"}
+[INFO ] 2024-04-04 16:46:56.769 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:56.769 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:58.015 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.015 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:58.016 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:46:58.017 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.018 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:58.027 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:58.027 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:58.033 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.033 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:46:58.039 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.039 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:46:58.169 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:46:58.169 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.169 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:46:58.170 [main] StepDefinition - Response Body: {"status":"OK","place_id":"3017703e5f958226f29612dd5fde2429","scope":"APP","reference":"5945fe034b3288097272e3a5dab9d1d85945fe034b3288097272e3a5dab9d1d8","id":"5945fe034b3288097272e3a5dab9d1d8"}
+[INFO ] 2024-04-04 16:46:58.170 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.170 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:58.176 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:46:58.176 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:46:58.177 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.177 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:46:58.184 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:46:58.184 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:46:58.184 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.184 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:46:58.186 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:58.186 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:46:59.161 [main] StepDefinition - 
+Expected: 7y6t5r, Street, West Coast
+Actual  : 7y6t5r, Street, West Coast - 04-Apr-2024_16-46-58-036
+[INFO ] 2024-04-04 16:46:59.162 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:59.162 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:46:59.164 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"IICC - Add","phone_number":"+965 123123","address":"7y6t5r, Street, West Coast - 04-Apr-2024_16-46-58-036","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"French"}
+[INFO ] 2024-04-04 16:46:59.164 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:46:59.164 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:00.511 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.511 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:00.512 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:47:00.512 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.512 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:00.519 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:00.520 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:00.526 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.526 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:47:00.534 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.534 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:00.679 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:47:00.681 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.681 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:00.681 [main] StepDefinition - Response Body: {"status":"OK","place_id":"1473eb4a33d2db6967e49ea6fe89c6c7","scope":"APP","reference":"bf98e1c1655a95e39c33e500a6e4793abf98e1c1655a95e39c33e500a6e4793a","id":"bf98e1c1655a95e39c33e500a6e4793a"}
+[INFO ] 2024-04-04 16:47:00.681 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.681 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:00.692 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:00.692 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:00.693 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.693 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:00.702 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:47:00.702 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:47:00.704 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.704 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:47:00.705 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:00.705 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:47:01.680 [main] StepDefinition - 
+Expected: 0o6t3w, Street, West Coast
+Actual  : 0o6t3w, Street, West Coast - 04-Apr-2024_16-47-00-531
+[INFO ] 2024-04-04 16:47:01.681 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:01.681 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:47:01.682 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Eclipse Hall - Add","phone_number":"+965 123123","address":"0o6t3w, Street, West Coast - 04-Apr-2024_16-47-00-531","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Hindi"}
+[INFO ] 2024-04-04 16:47:01.683 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:01.683 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:04.131 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.131 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:04.132 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:47:04.132 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.132 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:04.143 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:04.143 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:04.149 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.149 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:47:04.157 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.157 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:04.297 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:47:04.298 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.298 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:04.298 [main] StepDefinition - Response Body: {"status":"OK","place_id":"2cd488e0f1dc1fb1e45a95d8518de404","scope":"APP","reference":"430d89ddec070d3de5c2f843027d9bf9430d89ddec070d3de5c2f843027d9bf9","id":"430d89ddec070d3de5c2f843027d9bf9"}
+[INFO ] 2024-04-04 16:47:04.299 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.299 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:04.307 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:04.307 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:04.308 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.308 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:04.319 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:47:04.320 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:47:04.320 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.321 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:47:04.322 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:04.322 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:47:05.333 [main] StepDefinition - 
+Expected: 9i1q8u, Street, West Coast
+Actual  : 9i1q8u, Street, West Coast - 04-Apr-2024_16-47-04-152
+[INFO ] 2024-04-04 16:47:05.334 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:05.334 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:47:05.335 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Karachi Bakery - Add","phone_number":"+965 123123","address":"9i1q8u, Street, West Coast - 04-Apr-2024_16-47-04-152","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Sanskrit"}
+[INFO ] 2024-04-04 16:47:05.336 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:05.336 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:06.592 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.593 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:06.593 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:47:06.594 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.594 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:06.605 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:06.605 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:06.611 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.611 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:47:06.619 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.619 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:06.738 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:47:06.739 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.739 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:06.739 [main] StepDefinition - Response Body: {"status":"OK","place_id":"c97003c8becd561dd442bde60b5c5ba4","scope":"APP","reference":"83ccd38cf8fb7d7fb2a42ad9094d440e83ccd38cf8fb7d7fb2a42ad9094d440e","id":"83ccd38cf8fb7d7fb2a42ad9094d440e"}
+[INFO ] 2024-04-04 16:47:06.740 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.740 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:06.745 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:06.745 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:06.746 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.746 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:06.752 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:47:06.752 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:47:06.753 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.753 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:47:06.754 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:06.754 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:47:07.712 [main] StepDefinition - 
+Expected: 1q8u5r, Street, West Coast
+Actual  : 1q8u5r, Street, West Coast - 04-Apr-2024_16-47-06-613
+[INFO ] 2024-04-04 16:47:07.713 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:07.713 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:47:07.714 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Puma Shoes - Add","phone_number":"+965 123123","address":"1q8u5r, Street, West Coast - 04-Apr-2024_16-47-06-613","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Punjabi"}
+[INFO ] 2024-04-04 16:47:07.715 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:07.715 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:09.191 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.191 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:09.191 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:47:09.192 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.192 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:09.200 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:09.200 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:09.205 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.205 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:47:09.211 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.212 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:09.343 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:47:09.344 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.344 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:09.344 [main] StepDefinition - Response Body: {"status":"OK","place_id":"d1e6f01e5df443f7ae8e8a71799a75b0","scope":"APP","reference":"f33a0b9f4559ae619a5452ce5c636aeff33a0b9f4559ae619a5452ce5c636aef","id":"f33a0b9f4559ae619a5452ce5c636aef"}
+[INFO ] 2024-04-04 16:47:09.344 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.344 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:09.352 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:09.352 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:09.352 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.353 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:09.359 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:47:09.359 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:47:09.359 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.359 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:47:09.360 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:09.360 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:47:10.382 [main] StepDefinition - 
+Expected: 9i0o8u, Street, West Coast
+Actual  : 9i0o8u, Street, West Coast - 04-Apr-2024_16-47-09-208
+[INFO ] 2024-04-04 16:47:10.383 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:10.383 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:47:10.384 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Lifestyle Clothing - Add","phone_number":"+965 123123","address":"9i0o8u, Street, West Coast - 04-Apr-2024_16-47-09-208","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"French"}
+[INFO ] 2024-04-04 16:47:10.385 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:10.385 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:11.811 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.811 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:11.812 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:47:11.813 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.813 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:11.822 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:11.822 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:11.827 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.827 [main] StepDefinition - Setting up Pay Load
+[INFO ] 2024-04-04 16:47:11.833 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.833 [main] StepDefinition - Calling API: AddPlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:11.965 [main] StepDefinition - resourceAPI.getResource(): AddPlaceAPI
+[INFO ] 2024-04-04 16:47:11.966 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.966 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:11.967 [main] StepDefinition - Response Body: {"status":"OK","place_id":"04ddc219d26326c8be3574351ffa2bd8","scope":"APP","reference":"4fbd91bacca401e46adb9e14c30bf1d64fbd91bacca401e46adb9e14c30bf1d6","id":"4fbd91bacca401e46adb9e14c30bf1d6"}
+[INFO ] 2024-04-04 16:47:11.967 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.967 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:11.975 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:11.975 [main] StepDefinition - ExpectedValue: OK
+[INFO ] 2024-04-04 16:47:11.976 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.976 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:11.982 [main] StepDefinition - keyValue: scope
+[INFO ] 2024-04-04 16:47:11.982 [main] StepDefinition - ExpectedValue: APP
+[INFO ] 2024-04-04 16:47:11.982 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.982 [main] StepDefinition - In verify data step
+[INFO ] 2024-04-04 16:47:11.983 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:11.983 [main] StepDefinition - Calling API: GetPlaceAPI; HTTP Method: GET
+[INFO ] 2024-04-04 16:47:13.043 [main] StepDefinition - 
+Expected: 6t8u0o, Street, West Coast
+Actual  : 6t8u0o, Street, West Coast - 04-Apr-2024_16-47-11-830
+[INFO ] 2024-04-04 16:47:13.045 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:13.045 [main] StepDefinition - In delete Place Payload step
+[INFO ] 2024-04-04 16:47:13.046 [main] StepDefinition - Deletion response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Shopers Stop - Add","phone_number":"+965 123123","address":"6t8u0o, Street, West Coast - 04-Apr-2024_16-47-11-830","types":"Grocery,Snack,Beverages","website":"www.google.com","language":"Sanskrit"}
+[INFO ] 2024-04-04 16:47:13.047 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:13.047 [main] StepDefinition - Calling API: DeletePlaceAPI; HTTP Method: POST
+[INFO ] 2024-04-04 16:47:14.374 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:14.374 [main] StepDefinition - Validating if API Call status is OK
+[INFO ] 2024-04-04 16:47:14.374 [main] StepDefinition - Response Body: {"status":"OK"}
+[INFO ] 2024-04-04 16:47:14.376 [main] StepDefinition - getMethodName
+[INFO ] 2024-04-04 16:47:14.376 [main] StepDefinition - Validating response body value
+[INFO ] 2024-04-04 16:47:14.385 [main] StepDefinition - keyValue: status
+[INFO ] 2024-04-04 16:47:14.386 [main] StepDefinition - ExpectedValue: OK

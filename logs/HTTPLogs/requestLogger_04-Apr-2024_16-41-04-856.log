@@ -12,13 +12,15 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": "50",
-    "name": "Sai Nilayam - Add",
+    "name": "Test House - Add",
     "phone_number": "+965 123123",
-    "address": "8u7y6t, Street, West Coast - 24-Mar-2024_20-45-57-208",
+    "address": "123, Street, East Coast - 04-Apr-2024_16-41-04-983",
     "types": [
         "Grocery",
+        "Dairy",
         "Snack",
-        "Beverages"
+        "Beverages",
+        "Medicines"
     ],
     "voyage": [
         "New Delhi",
@@ -27,22 +29,22 @@ Body:
         "Hyderabad"
     ],
     "website": "www.google.com",
-    "language": "Hindi",
+    "language": "English",
     "location": {
         "lat": 32.98977,
         "lng": -32.98977
     },
     "nicknames": {
-        "schoolName": "takle",
-        "houseName": "bhai"
+        "schoolName": "dude",
+        "houseName": "sam"
     }
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=efc14b9a682d83822265c3037631f301
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=8cbed6428a411301f8a2d4c579cbdcbc
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=efc14b9a682d83822265c3037631f301
+				place_id=8cbed6428a411301f8a2d4c579cbdcbc
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -63,5 +65,5 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "efc14b9a682d83822265c3037631f301"
+    "place_id": "8cbed6428a411301f8a2d4c579cbdcbc"
 }

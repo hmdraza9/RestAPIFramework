@@ -82,6 +82,10 @@ public class UtilMethods {
 //		return ap;
 //	}
 
+	public static String getMethodName() {
+		return Thread.currentThread().getStackTrace()[1].getMethodName();
+	}
+
 	public RequestSpecification requestSpecificationMap(String apiType) throws FileNotFoundException {
 
 		RestAssured.baseURI = readPropFile("baseURL");
@@ -91,13 +95,15 @@ public class UtilMethods {
 					new FileOutputStream("logs/HTTPLogs/requestLogger_" + getTime() + ".log"));
 			PrintStream resStream = new PrintStream(
 					new FileOutputStream("logs/HTTPLogs/responseLogger_" + getTime() + ".log"));
-			switch(apiType.toLowerCase()){
-				case "graphql" : req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
+			switch (apiType.toLowerCase()) {
+			case "graphql":
+				req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
 						.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
 						.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
 						.setUrlEncodingEnabled(false).build();
-					break;
-				case "map" : req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
+				break;
+			case "map":
+				req = new RequestSpecBuilder().setBaseUri(readPropFile("baseURL"))
 						.addQueryParam("key", readPropFile("mapKey"))
 						.addFilter(RequestLoggingFilter.logRequestTo(reqStream))
 						.addFilter(ResponseLoggingFilter.logResponseTo(resStream)).setContentType(ContentType.JSON)
