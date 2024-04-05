@@ -7,4 +7,7 @@ public class Constants {
 	public static final String apiPOST = "POST";
 	public static final String apiDELETE = "DELETE";
 
+	private Constants() {
+
+	}
 }
